@@ -1,0 +1,732 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header #navbar {
+  padding: 0px 50px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+header #navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.7098039216);
+  box-shadow: 2px 0 12px 0 rgba(0, 0, 0, 0.147);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+header #navbar .logo img {
+  width: 151px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header #navbar .category ul {
+  display: flex;
+  gap: 20px;
+}
+header #navbar .category ul li {
+  padding: 40px 0 40px 0;
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  font-family: "Albert Sans", sans-serif;
+  color: #e1e1e1;
+}
+header #navbar .category ul li a {
+  color: #000000;
+}
+header #navbar .header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #navbar .header-right .search-form {
+  justify-content: space-between;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2509803922);
+  display: flex;
+  min-width: 120px;
+  min-height: 40px;
+  background-color: transparent;
+  width: 268px;
+  height: 40px;
+  padding: 0px 20px;
+}
+header #navbar .header-right .search-form input {
+  background-color: transparent;
+  font-size: 18px;
+  outline: none;
+  line-height: 2rem;
+  padding: 0px 20px;
+  border: none;
+}
+header #navbar .header-right .search-form .icon {
+  justify-content: center;
+  background-color: #738060;
+  min-width: 26px;
+  min-height: 40px;
+  align-items: center;
+  display: flex;
+  border-radius: 0px 25px 25px 0px;
+}
+header #navbar .header-right .search-form .icon i {
+  color: white;
+}
+header #navbar .header-right .user-actions {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+}
+header #navbar .header-right .user-actions a {
+  font-size: 18px;
+  font-family: "Albert Sans", sans-serif;
+  color: #000000;
+}
+header #navbar .header-right .user-actions a i {
+  font-size: 24px;
+}
+header #navbar .header-right .user-actions .burger {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  header #navbar a {
+    font-size: 18px;
+    font-family: "Albert Sans", sans-serif;
+    color: #000000;
+    display: none;
+  }
+  header #navbar a i {
+    font-size: 24px;
+  }
+  header #navbar .burger {
+    display: block;
+  }
+  header #navbar .search-form {
+    display: none;
+  }
+  header #navbar .header-right {
+    display: none;
+  }
+  header #navbar .category {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header #navbar a {
+    font-size: 18px;
+    font-family: "Albert Sans", sans-serif;
+    color: #000000;
+    display: none;
+  }
+  header #navbar a i {
+    font-size: 24px;
+  }
+  header #navbar .burger {
+    display: block;
+  }
+  header #navbar .search-form {
+    display: none;
+  }
+  header #navbar .header-right {
+    display: none;
+  }
+  header #navbar .category {
+    display: none;
+  }
+}
+header .swiper-slide {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 260px;
+}
+header .swiper-slide .svg-wave {
+  position: absolute;
+  bottom: -24%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+}
+header .swiper-slide .path-0 {
+  animation: pathAnim-0 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes pathAnim-0 {
+  0% {
+    d: path("M 0,400 L 0,150 C 57.776923076923055,155.23589743589744 115.55384615384611,160.47179487179488 195,171 C 274.4461538461539,181.52820512820512 375.5615384615386,197.34871794871793 473,176 C 570.4384615384614,154.65128205128207 664.1999999999999,96.13333333333333 752,78 C 839.8000000000001,59.86666666666667 921.6384615384616,82.11794871794874 991,117 C 1060.3615384615384,151.88205128205126 1117.246153846154,199.3948717948718 1190,207 C 1262.753846153846,214.6051282051282 1351.376923076923,182.3025641025641 1440,150 L 1440,400 L 0,400 Z");
+  }
+  25% {
+    d: path("M 0,400 L 0,150 C 93.22820512820513,132.9820512820513 186.45641025641027,115.96410256410256 275,101 C 363.54358974358973,86.03589743589744 447.40256410256416,73.12564102564102 521,93 C 594.5974358974358,112.87435897435898 657.9333333333334,165.53333333333333 740,186 C 822.0666666666666,206.46666666666667 922.8641025641025,194.74102564102566 999,170 C 1075.1358974358975,145.25897435897434 1126.6102564102564,107.5025641025641 1196,102 C 1265.3897435897436,96.4974358974359 1352.6948717948717,123.24871794871795 1440,150 L 1440,400 L 0,400 Z");
+  }
+  50% {
+    d: path("M 0,400 L 0,150 C 105.65128205128207,148.75897435897434 211.30256410256413,147.5179487179487 284,132 C 356.69743589743587,116.48205128205129 396.4410256410256,86.68717948717946 463,99 C 529.5589743589744,111.31282051282054 622.9333333333334,165.73333333333335 722,182 C 821.0666666666666,198.26666666666665 925.8256410256411,176.37948717948717 1002,169 C 1078.174358974359,161.62051282051283 1125.7641025641026,168.74871794871794 1194,168 C 1262.2358974358974,167.25128205128206 1351.1179487179488,158.62564102564102 1440,150 L 1440,400 L 0,400 Z");
+  }
+  75% {
+    d: path("M 0,400 L 0,150 C 104.48461538461538,108.15641025641025 208.96923076923076,66.31282051282051 277,81 C 345.03076923076924,95.68717948717949 376.60769230769233,166.90512820512825 455,166 C 533.3923076923077,165.09487179487175 658.6,92.06666666666666 755,78 C 851.4,63.933333333333344 918.9923076923078,108.82820512820513 977,112 C 1035.0076923076922,115.17179487179487 1083.4307692307693,76.62051282051283 1159,76 C 1234.5692307692307,75.37948717948717 1337.2846153846153,112.68974358974359 1440,150 L 1440,400 L 0,400 Z");
+  }
+  100% {
+    d: path("M 0,400 L 0,150 C 57.776923076923055,155.23589743589744 115.55384615384611,160.47179487179488 195,171 C 274.4461538461539,181.52820512820512 375.5615384615386,197.34871794871793 473,176 C 570.4384615384614,154.65128205128207 664.1999999999999,96.13333333333333 752,78 C 839.8000000000001,59.86666666666667 921.6384615384616,82.11794871794874 991,117 C 1060.3615384615384,151.88205128205126 1117.246153846154,199.3948717948718 1190,207 C 1262.753846153846,214.6051282051282 1351.376923076923,182.3025641025641 1440,150 L 1440,400 L 0,400 Z");
+  }
+}
+header .swiper-slide .head_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  header .swiper-slide .head_text h1 {
+    font-size: 10px;
+  }
+}
+header .swiper-slide .head_text h2 {
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 22px;
+  line-height: 1.4em;
+  color: #FFF;
+}
+header .swiper-slide .head_text h1 {
+  font-family: "Tenor Sans", Sans-serif;
+  font-size: 100px;
+  color: #FFF;
+}
+header .swiper-slide .head_text h3 {
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #FFF;
+}
+header .swiper-slide .head_text button {
+  background-color: #FEF5EC;
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6em;
+  fill: #000;
+  color: #000;
+  --fill-color: #738060;
+  border-radius: 4px 4px 4px 4px;
+  padding: 12px 36px 12px 36px;
+  border: none;
+}
+
+#start {
+  background-color: #FDF5EC;
+}
+#start .journey {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  flex-direction: column;
+}
+#start .journey h1 {
+  font-family: "Tenor Sans", Sans-serif;
+  font-size: 50px;
+  line-height: 58px;
+  color: #000;
+}
+#start .journey .line {
+  text-align: center;
+  width: 90px;
+  height: 1px;
+  border: 1px solid #b0abab;
+}
+#start .journey h3 {
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 20px;
+  line-height: 1.4em;
+  color: #444;
+}
+#start .cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#start .cards .card_img {
+  width: 200px;
+  height: 200px;
+  border: 1px;
+  border-color: #728060;
+  border-style: dashed;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#start .cards .card_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#start .cards .card_img img:hover {
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}
+#start .cards .card_body {
+  margin: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-direction: column;
+}
+#start .cards .card_body h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #000;
+  font-family: Tenor Sans, sans-serif;
+  font-weight: 400;
+}
+#start .cards .card_body h4 {
+  font-size: 18px;
+  line-height: 27px;
+  color: #444444;
+  font-family: "Albert Sans", Sans-serif;
+  text-align: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 950px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#slide {
+  background-color: #FDF5EC;
+  padding-top: 100px;
+}
+#slide marquee {
+  background-color: #728060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #FFF;
+  color: #FFF;
+  padding: 0 0 0 0;
+  font-size: 18px;
+  font-family: "Albert Sans", Sans-serif;
+}
+#slide ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+#slide ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#elementor {
+  background-color: #FFFFFF;
+  margin: 100px 0;
+}
+#elementor .left .left_head_text {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+  flex-direction: column;
+}
+#elementor .left .left_head_text h3 {
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 20px;
+  line-height: 1.4em;
+  color: #444;
+}
+#elementor .left .left_head_text .line {
+  text-align: center;
+  width: 90px;
+  height: 1px;
+  border: 1px solid #b0abab;
+}
+#elementor .left .left_head_text h1 {
+  font-family: "Tenor Sans", Sans-serif;
+  font-size: 50px;
+  line-height: 58px;
+  color: #000;
+}
+#elementor .left .left_img {
+  margin: 40px 0;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+#elementor .left .left_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#elementor .left .left_img .position_img {
+  position: absolute;
+  top: 60px;
+  left: 90px;
+}
+#elementor .right {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: column;
+}
+#elementor .right .right_img {
+  width: 550px;
+  height: 650px;
+}
+#elementor .right .right_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+#elementor .right .right_img img:hover {
+  transform: scale(1.1);
+}
+#elementor .right .right_text p {
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  color: #444;
+}
+
+#products {
+  background-color: #738363;
+  background-position: center center;
+  background-repeat: repeat;
+  height: 922px;
+  opacity: 100%;
+}
+#products .delivered .head_text {
+  padding-top: 100px;
+}
+#products .delivered .head_text h1 {
+  text-align: center;
+  font-family: "Tenor Sans", Sans-serif;
+  font-size: 50px;
+  line-height: 1.4em;
+  color: #FFF;
+}
+#products .delivered .product_title {
+  margin: 80px 0;
+}
+#products .delivered .product_title ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#products .delivered .product_title ul li {
+  padding: 20px 80px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Albert Sans", Sans-serif;
+  border-radius: 50px 50px 0px 0px;
+  color: #FFF;
+}
+#products .delivered .product_title ul li:hover {
+  color: #444444;
+  background-color: #FEF5EC;
+}
+#products .delivered .product_title .product_category {
+  padding: 70px 60px;
+  background-color: #FFFFFF;
+  width: 1290px;
+  height: 474px;
+  border-radius: 40px;
+}
+#products .delivered .product_title .product_category .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#products .delivered .product_title .product_category .cards .cards_img img {
+  width: 94px;
+  height: 94px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#products .delivered .product_title .product_category .cards .cards_body {
+  display: flex;
+  align-items: nul;
+  gap: 12px;
+  flex-direction: column;
+}
+#products .delivered .product_title .product_category .cards .cards_body h2 {
+  color: #000000;
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+#products .delivered .product_title .product_category .cards .cards_body .star i {
+  font-size: 16px;
+}
+#products .delivered .product_title .product_category .cards .cards_body h3 {
+  font-family: "Albert Sans", Sans-serif;
+  display: flex;
+  gap: 10px;
+  font-size: 17px;
+  color: #000000;
+}
+#products .delivered .product_title .product_category .cards .cards_body h3 span {
+  text-decoration: line-through;
+  color: #444444;
+}
+
+#history {
+  background-color: #FEF5EC;
+}
+#history .left {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  padding: 50px 0 100px;
+}
+#history .left h2 {
+  font-size: 20px;
+  font-family: "Albert Sans", Sans-serif;
+  color: #444444;
+}
+#history .left .line {
+  text-align: center;
+  width: 90px;
+  height: 1px;
+  border: 1px solid #b0abab;
+}
+#history .left h1 {
+  font-family: "Tenor Sans", Sans-serif;
+  font-size: 50px;
+  line-height: 58px;
+  color: #000;
+}
+#history .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#history .right p {
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: #444;
+}
+#history .number {
+  padding: 20px 0;
+}
+#history .number h2 {
+  font-family: "Tenor Sans", Sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  color: #738060;
+}
+#history .timeline-line {
+  position: relative;
+  padding: 30px 0;
+}
+#history .timeline-line .line-full {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #738060;
+  z-index: 1;
+}
+#history .timeline-line .dot {
+  width: 12px;
+  height: 12px;
+  background-color: #738060;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+#history .history_text {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 40px 0;
+}
+#history .history_text h2 {
+  font-family: "Tenor Sans", Sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  color: #000000;
+}
+#history .history_text h4 {
+  font-size: 18px;
+  color: #444444;
+  font-family: "Albert Sans", Sans-serif;
+  line-height: 1.6;
+}/*# sourceMappingURL=style.css.map */

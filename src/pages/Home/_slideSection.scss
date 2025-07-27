@@ -1,0 +1,26 @@
+#slide {
+    background-color: #FDF5EC;
+    padding-top: 100px;
+
+    marquee {
+
+        background-color: #728060;
+
+        @include flex (center, center, null, null);
+
+        fill: #FFF;
+        color: #FFF;
+        padding: 0 0 0 0;
+        font-size: 18px;
+        font-family: "Albert Sans", Sans-serif;
+
+    }
+
+    ul {
+        @include flex (center, center, 100px, null);
+
+        li {
+            @include flex (center, center, 5px, null);
+        }
+    }
+}

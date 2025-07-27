@@ -1,0 +1,80 @@
+#elementor {
+    background-color: #FFFFFF;
+    margin: 100px 0;
+
+    .left {
+        .left_head_text {
+            @include flex(start, start, 20px, column);
+
+            h3 {
+                font-family: "Albert Sans", Sans-serif;
+                font-size: 20px;
+                line-height: 1.4em;
+                color: #444;
+            }
+
+            .line {
+                text-align: center;
+                width: 90px;
+                height: 1px;
+                border: 1px solid #b0abab;
+            }
+
+            h1 {
+                font-family: "Tenor Sans", Sans-serif;
+                font-size: 50px;
+                line-height: 58px;
+                color: #000;
+            }
+        }
+
+        .left_img {
+            margin: 40px 0;
+            position: relative;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+
+            img {
+                object-fit: cover;
+            }
+
+            .position_img {
+                position: absolute;
+                top: 60px;
+                left: 90px;
+            }
+        }
+
+    }
+
+    .right {
+        @include flex(start, center, 50px, column);
+
+        .right_img {
+            width: 550px;
+            height: 650px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.5s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .right_text {
+            p {
+                font-family: "Albert Sans", Sans-serif;
+                font-size: 20px;
+                line-height: 32px;
+                color: #444;
+            }
+        }
+    }
+
+}

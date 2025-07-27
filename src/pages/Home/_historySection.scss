@@ -1,0 +1,104 @@
+#history {
+    background-color: #FEF5EC;
+
+
+    .left {
+        @include flex (null, null, 24px, column);
+        padding: 50px 0 100px;
+
+        h2 {
+            font-size: 20px;
+            font-family: "Albert Sans", Sans-serif;
+            color: #444444;
+        }
+
+        .line {
+
+            text-align: center;
+            width: 90px;
+            height: 1px;
+            border: 1px solid #b0abab;
+
+        }
+
+        h1 {
+            font-family: "Tenor Sans", Sans-serif;
+            font-size: 50px;
+            line-height: 58px;
+            color: #000;
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            font-family: "Albert Sans", Sans-serif;
+            font-size: 18px;
+            line-height: 32px;
+            color: #444;
+        }
+    }
+
+    .number {
+        padding: 20px 0;
+        h2 {
+            font-family: "Tenor Sans", Sans-serif;
+            font-size: 70px;
+            font-weight: 400;
+            color: #738060;
+        }
+    }
+
+    .timeline-line {
+        position: relative;
+        padding: 30px 0;
+
+        .line-full {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #738060;
+            z-index: 1;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            background-color: #738060;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: 2;
+        }
+    }
+
+    .history_text {
+        @include flex(null,null,20px,column);
+        padding: 40px 0;
+        h2 {
+            font-family: "Tenor Sans", Sans-serif;
+            font-size: 25px;
+            font-weight: 300;
+            color: #000000;
+        }
+
+        h4 {
+            font-size: 18px;
+            color: #444444;
+            font-family: "Albert Sans", Sans-serif;
+            line-height: 1.6;
+        }
+
+    }
+
+
+
+
+}

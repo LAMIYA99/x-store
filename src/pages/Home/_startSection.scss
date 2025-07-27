@@ -1,0 +1,80 @@
+#start {
+    background-color: #FDF5EC;
+
+    .journey {
+        padding: 50px 0;
+        @include flex (center, center, 22px, column);
+
+        h1 {
+            font-family: "Tenor Sans", Sans-serif;
+            font-size: 50px;
+            line-height: 58px;
+            color: #000;
+        }
+
+        .line {
+
+            text-align: center;
+            width: 90px;
+            height: 1px;
+            border: 1px solid #b0abab;
+
+        }
+
+        h3 {
+            font-family: "Albert Sans", Sans-serif;
+            font-size: 20px;
+            line-height: 1.4em;
+            color: #444;
+        }
+
+    }
+
+    .cards {
+  
+        @include flex (center, null, null, column);
+
+
+        .card_img {
+            width: 200px;
+            height: 200px;
+            border: 1px;
+            border-color: #728060;
+            border-style: dashed;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+                &:hover {
+                    transform: scale(1.05);
+                    transition: transform 0.4s ease;
+                }
+            }
+        }
+
+        .card_body {
+            margin: 16px 0;
+            @include flex (center, center, 12px, column);
+
+            h2 {
+                text-align: center;
+                font-size: 28px;
+                color: #000;
+                font-family: Tenor Sans, sans-serif;
+                font-weight: 400;
+            }
+
+            h4 {
+                font-size: 18px;
+                line-height: 27px;
+                color: #444444;
+                font-family: "Albert Sans", Sans-serif;
+                text-align: center;
+            }
+        }
+    }
+}

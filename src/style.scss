@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap');
+@import "./base/reset";
+@import "./vendors/mixin";
+@import "./layout/header";
+@import"../src/pages/Home/startSection";
+@import "./common/swiper";
+@import "../src/pages/Home/slideSection";
+@import"../src/pages/Home/elementor";
+@import"../src/pages/Home/products";
+@import"../src/pages/Home/historySection";
