@@ -1,11 +1,12 @@
 #everyone {
     background-color: #FFFFFF;
     padding: 50px 0;
+    position: relative;
 
+  
     .product-card {
         width: 250px;
         text-align: center;
-        font-family: "Poppins", sans-serif;
         cursor: pointer;
         transition: 0.3s;
 
@@ -124,7 +125,7 @@
         .cards_img {
             position: relative;
             overflow: hidden;
-          
+
 
             img {
                 width: 100%;

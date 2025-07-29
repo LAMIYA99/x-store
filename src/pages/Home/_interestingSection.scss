@@ -1,0 +1,85 @@
+#interesting {
+    background-color: #FDF4EC;
+    padding: 120px 0;
+
+    .head_title {
+        @include flex(center, center, 16px, column);
+
+        h2 {
+            font-family: "Albert Sans", Sans-serif;
+            font-size: 20px;
+            line-height: 1.4em;
+            color: #444;
+        }
+
+        .line {
+
+            text-align: center;
+            width: 90px;
+            height: 1px;
+            border: 1px solid #b0abab;
+
+        }
+
+        h1 {
+            font-family: "Tenor Sans", Sans-serif;
+            font-size: 50px;
+            line-height: 58px;
+            color: #000;
+            text-align: center;
+        }
+    }
+
+    .cards {
+        margin: 50px 0;
+
+        .cards_img {
+            position: relative;
+            overflow: hidden;
+
+            img {
+                object-fit: cover;
+                transition: 0.4s ease-in-out;
+                width: 100%;
+                height: auto;
+
+                &:hover {
+
+                    transition: 0.4s ease-in-out;
+                    transform: scale(1.1);
+
+                }
+            }
+
+            .position_btn {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                z-index: 2; 
+
+                button {
+                    color: #000;
+                    background-color: #FFF;
+                    border-radius: 100px 100px 100px 100px;
+                    border: none;
+                    padding: .4em .5em;
+                    margin: 0 3px 5px;
+                }
+            }
+
+
+        }
+
+        .cards_body {
+            margin: 20px 0;
+
+            h3 {
+                text-align: center;
+                color: #000;
+                font-size: 21px;
+                font-family: "Tenor Sans", Sans-serif;
+                line-height: 30px;
+            }
+        }
+    }
+}

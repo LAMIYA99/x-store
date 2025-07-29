@@ -1,14 +1,109 @@
 #timer {
-
     background-position: center center;
     background-repeat: repeat;
     background-size: cover;
     height: 593px;
     opacity: 100%;
+    position: relative;
+
+    #wavetop {
+        position: absolute;
+        top: -46px;
+    }
+
+    #wave {
+        position: absolute;
+        bottom: -50px;
+    }
 
     .content {
         background-color: #63862f5a;
         width: 100%;
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center
     }
+
+    .left {
+        @include flex(start, center, 20px, column);
+
+        h2 {
+            font-family: "Albert Sans", Sans-serif;
+            font-size: 20px;
+            line-height: 1.4em;
+            color: #e1e0e0;
+        }
+
+        .line {
+
+            text-align: center;
+            width: 90px;
+            height: 1px;
+            border: 1px solid #b0abab;
+
+        }
+
+        h1 {
+            font-family: "Tenor Sans", Sans-serif;
+            font-size: 50px;
+            line-height: 58px;
+            color: #FFF;
+        }
+    }
+
+    .right {
+        @include flex(center, center, 20px, column);
+        height: 100%;
+
+        .timer-box {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+
+            .timer-item {
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                padding: 15px 20px;
+                text-align: center;
+                border-radius: 6px;
+                min-width: 70px;
+
+                .time {
+                    font-size: 30px;
+                    color: white;
+                    font-weight: bold;
+                    font-family: "Tenor Sans", sans-serif;
+                    display: block;
+                }
+
+                .label {
+                    font-size: 12px;
+                    color: #e2e2e2;
+                    font-family: "Albert Sans", sans-serif;
+                    display: block;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .explore-btn {
+            a {
+                display: inline-block;
+                padding: 12px 24px;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                border-radius: 6px;
+                color: white;
+                text-decoration: none;
+                font-family: "Albert Sans", sans-serif;
+                font-size: 14px;
+                transition: 0.3s ease;
+
+                &:hover {
+                    background-color: white;
+                    color: #63862f;
+                }
+            }
+        }
+    }
+
 }

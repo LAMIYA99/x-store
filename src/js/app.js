@@ -30,3 +30,34 @@ window.addEventListener('scroll', () => {
     header.classList.remove('scrolled');
   }
 });
+
+
+
+
+  const deadline = new Date("2025-12-31T23:59:59").getTime();
+
+  function updateTimer() {
+    const now = new Date().getTime();
+    const diff = deadline - now;
+
+    if (diff <= 0) {
+      document.querySelectorAll(".time").forEach(el => el.textContent = "00");
+      clearInterval(timerInterval);
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.querySelector('.time[data-label="days"]').textContent = String(days).padStart(2, "0");
+    document.querySelector('.time[data-label="hours"]').textContent = String(hours).padStart(2, "0");
+    document.querySelector('.time[data-label="minutes"]').textContent = String(minutes).padStart(2, "0");
+    document.querySelector('.time[data-label="seconds"]').textContent = String(seconds).padStart(2, "0");
+  }
+
+  const timerInterval = setInterval(updateTimer, 1000);
+  updateTimer(); 
+
+

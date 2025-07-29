@@ -281,6 +281,10 @@ header .swiper-slide {
   overflow: hidden;
   position: relative;
   padding-bottom: 260px;
+  min-height: 950px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header .swiper-slide .svg-wave {
   position: absolute;
@@ -354,6 +358,137 @@ header .swiper-slide .head_text button {
   border-radius: 4px 4px 4px 4px;
   padding: 12px 36px 12px 36px;
   border: none;
+}
+
+#footer {
+  background-color: #fff;
+  padding: 60px 0;
+  font-family: "Albert Sans", sans-serif;
+  color: #000;
+  position: relative;
+}
+#footer #wave {
+  position: absolute;
+  top: -154px;
+}
+#footer .container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+}
+#footer .footer_top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+#footer .footer_top .footer_logo {
+  flex: 1;
+  min-width: 250px;
+}
+#footer .footer_top .footer_logo img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+#footer .footer_top .footer_logo p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+#footer .footer_top .footer_logo .app_buttons {
+  display: flex;
+  gap: 10px;
+}
+#footer .footer_top .footer_logo .app_buttons img {
+  width: 130px;
+  height: auto;
+  cursor: pointer;
+}
+#footer .footer_top .footer_links {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#footer .footer_top .footer_links ul {
+  list-style: none;
+  padding: 0;
+}
+#footer .footer_top .footer_links ul li {
+  margin-bottom: 20px;
+  font-size: 19px;
+  font-family: "Albert Sans", Sans-serif;
+}
+#footer .footer_top .footer_links ul li:first-child {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+#footer .footer_top .footer_links ul.contact_info {
+  font-size: 17px;
+}
+#footer .footer_top .footer_links ul.contact_info .call {
+  font-size: 40px;
+  font-family: "Tenor Sans", Sans-serif;
+}
+#footer .footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  text-align: center;
+}
+#footer .footer_bottom p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+#footer .footer_bottom .payments {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#footer .footer_bottom .payments img {
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 992px) {
+  #footer .footer_top {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .footer_top .footer_links {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .footer_top .footer_links ul {
+    text-align: center;
+  }
+  #footer .footer_logo {
+    text-align: center;
+  }
+  #footer .footer_logo .app_buttons {
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  #footer .footer_logo img {
+    width: 100px;
+  }
+  #footer .footer_logo .app_buttons img {
+    width: 110px;
+  }
+  #footer .footer_links ul li {
+    font-size: 14px;
+  }
+  #footer .footer_bottom p {
+    font-size: 13px;
+  }
+  #footer .footer_bottom .payments img {
+    width: 30px;
+  }
 }
 
 #start {
@@ -440,13 +575,10 @@ header .swiper-slide .head_text button {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  padding: 30px 0;
+  padding: 40px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .swiper-slide img {
@@ -733,11 +865,11 @@ header .swiper-slide .head_text button {
 #everyone {
   background-color: #FFFFFF;
   padding: 50px 0;
+  position: relative;
 }
 #everyone .product-card {
   width: 250px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -912,9 +1044,207 @@ header .swiper-slide .head_text button {
   background-size: cover;
   height: 593px;
   opacity: 100%;
+  position: relative;
+}
+#timer #wavetop {
+  position: absolute;
+  top: -46px;
+}
+#timer #wave {
+  position: absolute;
+  bottom: -50px;
 }
 #timer .content {
   background-color: rgba(99, 134, 47, 0.3529411765);
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#timer .left {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+#timer .left h2 {
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 20px;
+  line-height: 1.4em;
+  color: #e1e0e0;
+}
+#timer .left .line {
+  text-align: center;
+  width: 90px;
+  height: 1px;
+  border: 1px solid #b0abab;
+}
+#timer .left h1 {
+  font-family: "Tenor Sans", Sans-serif;
+  font-size: 50px;
+  line-height: 58px;
+  color: #FFF;
+}
+#timer .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  height: 100%;
+}
+#timer .right .timer-box {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+#timer .right .timer-box .timer-item {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 6px;
+  min-width: 70px;
+}
+#timer .right .timer-box .timer-item .time {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  font-family: "Tenor Sans", sans-serif;
+  display: block;
+}
+#timer .right .timer-box .timer-item .label {
+  font-size: 12px;
+  color: #e2e2e2;
+  font-family: "Albert Sans", sans-serif;
+  display: block;
+  margin-top: 5px;
+}
+#timer .right .explore-btn a {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-family: "Albert Sans", sans-serif;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+#timer .right .explore-btn a:hover {
+  background-color: white;
+  color: #63862f;
+}
+
+#business {
+  margin-top: 110px;
+}
+#business #wave {
+  margin-top: 80px;
+}
+#business .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+#business .cards .cards_img img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#business .cards .cards_body {
+  margin: 26px 0;
+}
+#business .cards .cards_body h2 {
+  font-family: Tenor Sans, sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+#business .cards .cards_body h3 {
+  margin-bottom: 1.43rem;
+  font-size: 18px;
+  line-height: 26px;
+  color: #444;
+  font-family: Tenor Sans, sans-serif;
+  text-align: center;
+}
+
+#interesting {
+  background-color: #FDF4EC;
+  padding: 120px 0;
+}
+#interesting .head_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-direction: column;
+}
+#interesting .head_title h2 {
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 20px;
+  line-height: 1.4em;
+  color: #444;
+}
+#interesting .head_title .line {
+  text-align: center;
+  width: 90px;
+  height: 1px;
+  border: 1px solid #b0abab;
+}
+#interesting .head_title h1 {
+  font-family: "Tenor Sans", Sans-serif;
+  font-size: 50px;
+  line-height: 58px;
+  color: #000;
+  text-align: center;
+}
+#interesting .cards {
+  margin: 50px 0;
+}
+#interesting .cards .cards_img {
+  position: relative;
+  overflow: hidden;
+}
+#interesting .cards .cards_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s ease-in-out;
+  width: 100%;
+  height: auto;
+}
+#interesting .cards .cards_img img:hover {
+  transition: 0.4s ease-in-out;
+  transform: scale(1.1);
+}
+#interesting .cards .cards_img .position_btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 2;
+}
+#interesting .cards .cards_img .position_btn button {
+  color: #000;
+  background-color: #FFF;
+  border-radius: 100px 100px 100px 100px;
+  border: none;
+  padding: 0.4em 0.5em;
+  margin: 0 3px 5px;
+}
+#interesting .cards .cards_body {
+  margin: 20px 0;
+}
+#interesting .cards .cards_body h3 {
+  text-align: center;
+  color: #000;
+  font-size: 21px;
+  font-family: "Tenor Sans", Sans-serif;
+  line-height: 30px;
 }/*# sourceMappingURL=style.css.map */
