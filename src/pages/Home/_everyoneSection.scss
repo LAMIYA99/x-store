@@ -1,0 +1,213 @@
+#everyone {
+    background-color: #FFFFFF;
+    padding: 50px 0;
+
+    .product-card {
+        width: 250px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        transition: 0.3s;
+
+        .product-img {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+
+            img {
+                width: 100%;
+                transition: 0.3s ease;
+                border-radius: 12px;
+            }
+
+            .product-icons {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                gap: 10px;
+                opacity: 0;
+                transition: 0.3s ease;
+
+                i {
+                    background-color: white;
+                    border-radius: 50%;
+                    padding: 10px;
+                    font-size: 14px;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: #000;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+
+                .product-icons {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .product-info {
+            margin-top: 12px;
+
+            .category {
+                font-size: 13px;
+                color: #888;
+            }
+
+            .name {
+                font-size: 16px;
+                font-weight: 500;
+                margin: 5px 0;
+                color: #000;
+            }
+
+            .price {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+
+                del {
+                    color: #aaa;
+                    font-size: 14px;
+                }
+
+                span {
+                    color: #000;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .head_text {
+        @include flex(center, center, 20px, column);
+
+        h2 {
+            font-family: "Tenor Sans", Sans-serif;
+            font-size: 50px;
+            line-height: 58px;
+            color: #000;
+        }
+
+        .line {
+
+            text-align: center;
+            width: 90px;
+            height: 1px;
+            border: 1px solid #b0abab;
+
+        }
+
+        h3 {
+            font-family: "Albert Sans", Sans-serif;
+            font-size: 20px;
+            line-height: 1.4em;
+            color: #444;
+        }
+
+    }
+
+    .cards {
+        cursor: pointer;
+        transition: 0.3s;
+
+        .cards_img {
+            position: relative;
+            overflow: hidden;
+          
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.3s ease;
+            }
+
+            .icons {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                gap: 10px;
+                opacity: 0;
+                transition: 0.3s ease;
+
+                i {
+                    background-color: white;
+                    border-radius: 50%;
+                    color: #7a7878;
+                    padding: 10px;
+                    font-size: 20px;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: #e7e7e7;
+
+                    }
+                }
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+
+                .icons {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .cards_body {
+            @include flex(start, null, 10px, column);
+
+            h4 {
+                margin-bottom: 3px;
+                color: #666666;
+                font-size: 15px;
+                font-family: "Albert Sans", Sans-serif;
+            }
+
+            h3 {
+                margin-bottom: 5px;
+                font-size: 18px;
+                font-family: "Albert Sans", Sans-serif;
+                color: #000000;
+            }
+
+            .star {
+
+                i {
+
+                    font-size: 16px;
+                }
+            }
+
+            .price {
+                margin-bottom: 7px;
+                font-size: 17px;
+                font-family: "Albert Sans", Sans-serif;
+
+                del {
+                    color: #000000;
+                }
+
+                span {
+                    color: #738060;
+                }
+            }
+        }
+    }
+}

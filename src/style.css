@@ -440,11 +440,10 @@ header .swiper-slide .head_text button {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #444;
+  padding: 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 950px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -729,4 +728,180 @@ header .swiper-slide .head_text button {
   color: #444444;
   font-family: "Albert Sans", Sans-serif;
   line-height: 1.6;
+}
+
+#everyone {
+  background-color: #FFFFFF;
+  padding: 50px 0;
+}
+#everyone .product-card {
+  width: 250px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#everyone .product-card .product-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+#everyone .product-card .product-img img {
+  width: 100%;
+  transition: 0.3s ease;
+  border-radius: 12px;
+}
+#everyone .product-card .product-img .product-icons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+#everyone .product-card .product-img .product-icons i {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+#everyone .product-card .product-img .product-icons i:hover {
+  background-color: #000;
+  color: #fff;
+}
+#everyone .product-card .product-img:hover img {
+  transform: scale(1.1);
+}
+#everyone .product-card .product-img:hover .product-icons {
+  opacity: 1;
+}
+#everyone .product-card .product-info {
+  margin-top: 12px;
+}
+#everyone .product-card .product-info .category {
+  font-size: 13px;
+  color: #888;
+}
+#everyone .product-card .product-info .name {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0;
+  color: #000;
+}
+#everyone .product-card .product-info .price {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#everyone .product-card .product-info .price del {
+  color: #aaa;
+  font-size: 14px;
+}
+#everyone .product-card .product-info .price span {
+  color: #000;
+  font-weight: 600;
+}
+#everyone .head_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+#everyone .head_text h2 {
+  font-family: "Tenor Sans", Sans-serif;
+  font-size: 50px;
+  line-height: 58px;
+  color: #000;
+}
+#everyone .head_text .line {
+  text-align: center;
+  width: 90px;
+  height: 1px;
+  border: 1px solid #b0abab;
+}
+#everyone .head_text h3 {
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 20px;
+  line-height: 1.4em;
+  color: #444;
+}
+#everyone .cards {
+  cursor: pointer;
+  transition: 0.3s;
+}
+#everyone .cards .cards_img {
+  position: relative;
+  overflow: hidden;
+}
+#everyone .cards .cards_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s ease;
+}
+#everyone .cards .cards_img .icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+#everyone .cards .cards_img .icons i {
+  background-color: white;
+  border-radius: 50%;
+  color: #7a7878;
+  padding: 10px;
+  font-size: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+#everyone .cards .cards_img .icons i:hover {
+  background-color: #e7e7e7;
+}
+#everyone .cards .cards_img:hover img {
+  transform: scale(1.1);
+}
+#everyone .cards .cards_img:hover .icons {
+  opacity: 1;
+}
+#everyone .cards .cards_body {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  flex-direction: column;
+}
+#everyone .cards .cards_body h4 {
+  margin-bottom: 3px;
+  color: #666666;
+  font-size: 15px;
+  font-family: "Albert Sans", Sans-serif;
+}
+#everyone .cards .cards_body h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-family: "Albert Sans", Sans-serif;
+  color: #000000;
+}
+#everyone .cards .cards_body .star i {
+  font-size: 16px;
+}
+#everyone .cards .cards_body .price {
+  margin-bottom: 7px;
+  font-size: 17px;
+  font-family: "Albert Sans", Sans-serif;
+}
+#everyone .cards .cards_body .price del {
+  color: #000000;
+}
+#everyone .cards .cards_body .price span {
+  color: #738060;
 }/*# sourceMappingURL=style.css.map */
