@@ -4,49 +4,57 @@
 
     .left {
         .left_head_text {
-            @include flex(start, start, 20px, column);
-
-            h3 {
-                font-family: "Albert Sans", Sans-serif;
-                font-size: 20px;
-                line-height: 1.4em;
-                color: #444;
-            }
-
-            .line {
-                text-align: center;
-                width: 90px;
-                height: 1px;
-                border: 1px solid #b0abab;
-            }
-
-            h1 {
-                font-family: "Tenor Sans", Sans-serif;
-                font-size: 50px;
-                line-height: 58px;
-                color: #000;
-            }
+          @include flex(start, start, 20px, column);
+      
+          h3 {
+            font-family: "Albert Sans", Sans-serif;
+            font-size: 20px;
+            line-height: 1.4em;
+            color: #444;
+          }
+      
+          .line {
+            text-align: center;
+            width: 90px;
+            height: 1px;
+            border: 1px solid #b0abab;
+          }
+      
+          h1 {
+            font-family: "Tenor Sans", Sans-serif;
+            font-size: 50px;
+            line-height: 58px;
+            color: #000;
+          }
         }
-
+      
         .left_img {
-            margin: 40px 0;
-            position: relative;
-            display: flex;
-            justify-content: end;
-            align-items: end;
+          margin: 40px 0;
+          position: relative;
+          display: flex;
+          justify-content: end;
+          align-items: end;
+      
+          img {
+            object-fit: cover;
+            display: block;
+            max-width: 100%;
+          }
+      
+          .position_img {
+            position: absolute;
+            top: 0; 
+            left: 80px; 
+            transform: translateY(0);
+            transition: transform 0.2s ease-out;
+            will-change: transform;
+            z-index: 2; 
 
-            img {
-                object-fit: cover;
-            }
-
-            .position_img {
-                position: absolute;
-                top: 60px;
-                left: 90px;
-            }
+          }
         }
-
-    }
+      }
+      
+    
 
     .right {
         @include flex(start, center, 50px, column);
@@ -77,4 +85,24 @@
         }
     }
 
+}
+
+@media screen and (max-width: 992px) {
+ .right{
+  .position_img{
+    img{
+      display: none;
+    }
+  }
+ }
+}
+
+@media screen and (max-width: 768px) {
+  .right{
+    .position_img{
+      img{
+        display: none;
+      }
+    }
+   }
 }

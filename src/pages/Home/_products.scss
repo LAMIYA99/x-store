@@ -1,99 +1,170 @@
 #products {
+    padding: 50px 0;
     background-color: #738363;
     background-position: center center;
     background-repeat: repeat;
-    height: 922px;
-    opacity: 100%;
-
+    background-size: cover;
+  
     .delivered {
-        .head_text {
-            padding-top: 100px;
-
-            h1 {
-
-                text-align: center;
-                font-family: "Tenor Sans", Sans-serif;
-                font-size: 50px;
-                line-height: 1.4em;
-                color: #FFF;
-            }
+      .head_text {
+        padding-top: 100px;
+  
+        h1 {
+          text-align: center;
+          font-family: "Tenor Sans", Sans-serif;
+          font-size: 50px;
+          line-height: 1.4em;
+          color: #FFF;
         }
-
-        .product_title {
-
-            margin: 80px 0;
-
-            ul {
-                @include flex (center, center, null, null);
-
-                li {
-                    padding: 20px 80px;
-                    font-size: 20px;
-                    font-weight: 600;
-                    font-family: "Albert Sans", Sans-serif;
-                    border-radius: 50px 50px 0px 0px;
-                    color: #FFF;
-
-                    &:hover {
-                        color: #444444;
-                        background-color: #FEF5EC;
-                    }
-                }
+      }
+  
+      .product_title {
+        margin: 40px 0;
+  
+        ul {
+          @include flex(center, center);
+  
+          li {
+            padding: 20px 80px;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: "Albert Sans", Sans-serif;
+            border-radius: 50px 50px 0px 0px;
+            color: #FFF;
+  
+            &:hover {
+              color: #444444;
+              background-color: #FEF5EC;
             }
-
-            .product_category {
-                padding: 70px 60px;
-                background-color: #FFFFFF;
-                width: 1290px;
-                height: 474px;
-                border-radius: 40px;
-
-                .cards {
-                    @include flex (center, center, 20px, null);
-
-                    .cards_img {
-                        img {
-                            width: 94px;
-                            height: 94px;
-                            object-fit: contain;
-                        }
-
-                    }
-
-                    .cards_body {
-                        @include flex (nul,null,12px,column);
-                        h2 {
-                            color: #000000;
-                            font-family: "Albert Sans", Sans-serif;
-                            font-size: 18px;
-                            font-weight: 400;
-                        }
-
-                        .star {
-
-                            i {
-
-                                font-size: 16px;
-                            }
-                        }
-
-                        h3 {
-                            font-family: "Albert Sans", Sans-serif;
-                            display: flex;
-                            gap: 10px;
-                            font-size: 17px;
-                            color: #000000;
-
-                            span {
-                                text-decoration: line-through;
-                                color: #444444;
-                            }
-                        }
-
-                    }
-                }
-            }
+          }
         }
-
+  
+        .product_category {
+          padding: 70px 60px;
+          background-color: #FFFFFF;
+          width: 100%;
+          border-radius: 40px;
+  
+          .col-xl-12 {
+            margin-bottom: 26px;
+          }
+  
+          .cards {
+            display: flex;
+     gap: 20px;
+            align-items: flex-start;
+    
+          
+  
+            .cards_img {
+              img {
+                width: 94px;
+                height: 94px;
+                object-fit: contain;
+              }
+            }
+  
+            .cards_body {
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+  
+              h2 {
+                color: #000;
+                font-family: "Albert Sans", Sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+              }
+  
+              .star {
+                i {
+                  font-size: 16px;
+                }
+              }
+  
+              h3 {
+                font-family: "Albert Sans", Sans-serif;
+                display: flex;
+                gap: 10px;
+                font-size: 17px;
+                color: #000;
+  
+                span {
+                  text-decoration: line-through;
+                  color: #444;
+                }
+              }
+            }
+          }
+        }
+      }
     }
-}
+  }
+  
+  @media screen and (max-width: 992px) {
+    #products {
+      .product_title {
+        ul li {
+          padding: 15px 40px;
+          font-size: 18px;
+        }
+  
+        .product_category {
+          padding: 40px 30px;
+  
+          .cards {
+            gap: 16px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #products {
+      .delivered .head_text h1 {
+        font-size: 32px;
+      }
+  
+      .product_title {
+        margin: 30px 0;
+  
+        ul li {
+          padding: 10px 20px;
+          font-size: 16px;
+        }
+  
+        .product_category {
+          padding: 30px 20px;
+          border-radius: 20px;
+  
+          .cards {
+            flex-direction: column;
+            gap: 12px;
+  
+            .cards_img img {
+              width: 70px;
+              height: 70px;
+            }
+  
+            .cards_body {
+              h2 {
+                font-size: 15px;
+              }
+  
+              h3 {
+                font-size: 14px;
+              }
+  
+              .star i {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+  

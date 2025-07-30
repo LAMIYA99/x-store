@@ -32,6 +32,18 @@ window.addEventListener('scroll', () => {
 });
 
 
+window.addEventListener("scroll", () => {
+  const parallaxImage = document.querySelector(".position_img");
+  if (parallaxImage) {
+    const scrollY = window.scrollY;
+    const offset = scrollY * 0.05; 
+    parallaxImage.style.transform = `translateY(${offset}px)`;
+  }
+});
+
+
+
+
 
 
   const deadline = new Date("2025-12-31T23:59:59").getTime();
@@ -61,3 +73,26 @@ window.addEventListener('scroll', () => {
   updateTimer(); 
 
 
+  const tabs = document.querySelectorAll('.tab-menu li');
+  const tabContents = document.querySelectorAll('.tab-content');
+  
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Tab-ların aktiv sinifini dəyişmək
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+  
+      // Müvafiq content göstərmək
+      const target = tab.getAttribute('data-tab');
+      tabContents.forEach(content => {
+        if(content.id === target) {
+          content.style.display = 'flex'; // və ya block, lazım olan display tərzi
+          content.classList.add('active');
+        } else {
+          content.style.display = 'none';
+          content.classList.remove('active');
+        }
+      });
+    });
+  });
+  
