@@ -370,8 +370,8 @@ header .swiper-slide .head_text button {
 #footer {
   background-color: #fff;
   padding: 60px 0;
-  font-family: "Albert Sans", sans-serif;
-  color: #000;
+  font-family: "Albert Sans", Sans-serif;
+  color: #000000;
   position: relative;
 }
 #footer #wave {
@@ -440,8 +440,8 @@ header .swiper-slide .head_text button {
 }
 #footer .footer_bottom {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   border-top: 1px solid #ddd;
   padding-top: 20px;
   text-align: center;
@@ -639,7 +639,7 @@ header .swiper-slide .head_text button {
   font-family: "Albert Sans", Sans-serif;
   font-size: 20px;
   line-height: 1.4em;
-  color: #444;
+  color: #444444;
 }
 #elementor .left .left_head_text .line {
   text-align: center;
@@ -648,17 +648,17 @@ header .swiper-slide .head_text button {
   border: 1px solid #b0abab;
 }
 #elementor .left .left_head_text h1 {
-  font-family: "Tenor Sans", Sans-serif;
+  font-family: "Albert Sans", Sans-serif;
   font-size: 50px;
   line-height: 58px;
-  color: #000;
+  color: #000000;
 }
 #elementor .left .left_img {
   margin: 40px 0;
   position: relative;
   display: flex;
-  justify-content: end;
   align-items: end;
+  justify-content: end;
 }
 #elementor .left .left_img img {
   -o-object-fit: cover;
@@ -700,7 +700,7 @@ header .swiper-slide .head_text button {
   font-family: "Albert Sans", Sans-serif;
   font-size: 20px;
   line-height: 32px;
-  color: #444;
+  color: #444444;
 }
 
 @media screen and (max-width: 992px) {
@@ -865,7 +865,7 @@ header .swiper-slide .head_text button {
   font-family: "Tenor Sans", Sans-serif;
   font-size: 50px;
   line-height: 58px;
-  color: #000;
+  color: #000000;
 }
 #history .right {
   display: flex;
@@ -876,7 +876,7 @@ header .swiper-slide .head_text button {
   font-family: "Albert Sans", Sans-serif;
   font-size: 18px;
   line-height: 32px;
-  color: #444;
+  color: #444444;
 }
 #history .number {
   padding: 20px 0;
@@ -931,7 +931,7 @@ header .swiper-slide .head_text button {
 }
 
 #everyone {
-  background-color: #FFFFFF;
+  background-color: #FFF;
   padding: 50px 0;
   position: relative;
 }
@@ -970,8 +970,8 @@ header .swiper-slide .head_text button {
   transition: 0.3s;
 }
 #everyone .product-card .product-img .product-icons i:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: #000000;
+  color: #FFF;
 }
 #everyone .product-card .product-img:hover img {
   transform: scale(1.1);
@@ -990,7 +990,7 @@ header .swiper-slide .head_text button {
   font-size: 16px;
   font-weight: 500;
   margin: 5px 0;
-  color: #000;
+  color: #000000;
 }
 #everyone .product-card .product-info .price {
   display: flex;
@@ -1002,7 +1002,7 @@ header .swiper-slide .head_text button {
   font-size: 14px;
 }
 #everyone .product-card .product-info .price span {
-  color: #000;
+  color: #000000;
   font-weight: 600;
 }
 #everyone .head_text {
@@ -1016,7 +1016,7 @@ header .swiper-slide .head_text button {
   font-family: "Tenor Sans", Sans-serif;
   font-size: 50px;
   line-height: 58px;
-  color: #000;
+  color: #000000;
 }
 #everyone .head_text .line {
   text-align: center;
@@ -1028,7 +1028,7 @@ header .swiper-slide .head_text button {
   font-family: "Albert Sans", Sans-serif;
   font-size: 20px;
   line-height: 1.4em;
-  color: #444;
+  color: #444444;
 }
 #everyone .cards {
   cursor: pointer;
@@ -1169,35 +1169,38 @@ header .swiper-slide .head_text button {
   margin-bottom: 30px;
 }
 #timer .right .timer-box .timer-item {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 15px 20px;
+  border: 1px solid white;
+  box-shadow: 10px;
+  padding: 30px 30px;
   text-align: center;
   border-radius: 6px;
-  min-width: 70px;
 }
 #timer .right .timer-box .timer-item .time {
-  font-size: 30px;
+  font-size: 45px;
   color: white;
   font-weight: bold;
-  font-family: "Tenor Sans", sans-serif;
+  font-family: "Albert Sans", Sans-serif;
   display: block;
 }
 #timer .right .timer-box .timer-item .label {
   font-size: 12px;
   color: #e2e2e2;
-  font-family: "Albert Sans", sans-serif;
+  font-family: "Albert Sans", Sans-serif;
   display: block;
   margin-top: 5px;
 }
 #timer .right .explore-btn a {
-  display: inline-block;
-  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 191px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 6px;
   color: white;
   text-decoration: none;
-  font-family: "Albert Sans", sans-serif;
-  font-size: 14px;
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 18px;
   transition: 0.3s ease;
 }
 #timer .right .explore-btn a:hover {
@@ -1228,10 +1231,10 @@ header .swiper-slide .head_text button {
   margin: 26px 0;
 }
 #business .cards .cards_body h2 {
-  font-family: Tenor Sans, sans-serif;
+  font-family: "Tenor Sans", Sans-serif;
   font-weight: 400;
   font-size: 25px;
-  color: #000;
+  color: #000000;
   text-align: center;
   margin-bottom: 0.7rem;
 }
@@ -1239,8 +1242,8 @@ header .swiper-slide .head_text button {
   margin-bottom: 1.43rem;
   font-size: 18px;
   line-height: 26px;
-  color: #444;
-  font-family: Tenor Sans, sans-serif;
+  color: #444444;
+  font-family: "Tenor Sans", Sans-serif;
   text-align: center;
 }
 
@@ -1259,7 +1262,7 @@ header .swiper-slide .head_text button {
   font-family: "Albert Sans", Sans-serif;
   font-size: 20px;
   line-height: 1.4em;
-  color: #444;
+  color: #444444;
 }
 #interesting .head_title .line {
   text-align: center;
@@ -1271,7 +1274,7 @@ header .swiper-slide .head_text button {
   font-family: "Tenor Sans", Sans-serif;
   font-size: 50px;
   line-height: 58px;
-  color: #000;
+  color: #000000;
   text-align: center;
 }
 #interesting .cards {
@@ -1299,7 +1302,7 @@ header .swiper-slide .head_text button {
   z-index: 2;
 }
 #interesting .cards .cards_img .position_btn button {
-  color: #000;
+  color: #000000;
   background-color: #FFF;
   border-radius: 100px 100px 100px 100px;
   border: none;

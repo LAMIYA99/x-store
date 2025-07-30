@@ -23,14 +23,16 @@
         display: flex;
         align-items: center;
         justify-content: center
+    
+      
     }
 
     .left {
         @include flex(start, center, 20px, column);
 
         h2 {
-            font-family: "Albert Sans", Sans-serif;
-            font-size: 20px;
+            font-family: $albert_font;
+            font-size: $font-li;
             line-height: 1.4em;
             color: #e1e0e0;
         }
@@ -45,10 +47,10 @@
         }
 
         h1 {
-            font-family: "Tenor Sans", Sans-serif;
-            font-size: 50px;
+            font-family: $tenor_font;
+            font-size: $font-h1;
             line-height: 58px;
-            color: #FFF;
+            color: $main-color;
         }
     }
 
@@ -58,28 +60,29 @@
 
         .timer-box {
             display: flex;
-            gap: 20px;
+            gap: $card-gap;
             margin-bottom: 30px;
 
             .timer-item {
-                border: 1px solid rgba(255, 255, 255, 0.5);
-                padding: 15px 20px;
+                border: 1px solid white;
+                box-shadow: 10px;
+                padding: 30px 30px;
                 text-align: center;
                 border-radius: 6px;
-                min-width: 70px;
+          
 
                 .time {
-                    font-size: 30px;
+                    font-size: 45px;
                     color: white;
                     font-weight: bold;
-                    font-family: "Tenor Sans", sans-serif;
+                    font-family: $albert_font;
                     display: block;
                 }
 
                 .label {
                     font-size: 12px;
                     color: #e2e2e2;
-                    font-family: "Albert Sans", sans-serif;
+                    font-family: $albert_font;
                     display: block;
                     margin-top: 5px;
                 }
@@ -87,15 +90,19 @@
         }
 
         .explore-btn {
+        
             a {
-                display: inline-block;
-                padding: 12px 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 16px 191px;
                 border: 1px solid rgba(255, 255, 255, 0.5);
                 border-radius: 6px;
                 color: white;
                 text-decoration: none;
-                font-family: "Albert Sans", sans-serif;
-                font-size: 14px;
+                font-family: $albert_font;
+                font-size: 18px;
                 transition: 0.3s ease;
 
                 &:hover {

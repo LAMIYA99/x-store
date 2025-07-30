@@ -6,10 +6,10 @@
         @include flex(center, center, 16px, column);
 
         h2 {
-            font-family: "Albert Sans", Sans-serif;
+            font-family: $albert_font;
             font-size: 20px;
             line-height: 1.4em;
-            color: #444;
+            color: $main-grey-color;
         }
 
         .line {
@@ -22,10 +22,10 @@
         }
 
         h1 {
-            font-family: "Tenor Sans", Sans-serif;
-            font-size: 50px;
+            font-family: $tenor_font;
+            font-size: $font-h1;
             line-height: 58px;
-            color: #000;
+            color: $text-dark;
             text-align: center;
         }
     }
@@ -58,8 +58,8 @@
                 z-index: 2; 
 
                 button {
-                    color: #000;
-                    background-color: #FFF;
+                    color: $text-dark;
+                    background-color: $main-color;
                     border-radius: 100px 100px 100px 100px;
                     border: none;
                     padding: .4em .5em;

@@ -20,10 +20,10 @@
             margin: 26px 0;
 
             h2 {
-                font-family: Tenor Sans, sans-serif;
+                font-family: $tenor_font;
                 font-weight: 400;
                 font-size: 25px;
-                color: #000;
+                color: $text-dark;
                 text-align: center;
                 margin-bottom: .7rem;
             }
@@ -32,8 +32,8 @@
                 margin-bottom: 1.43rem;
                 font-size: 18px;
                 line-height: 26px;
-                color: #444;
-                font-family: Tenor Sans, sans-serif;
+                color: $main-grey-color;
+                font-family: $tenor_font;
                 text-align: center;
 
             }

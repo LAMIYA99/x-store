@@ -7,10 +7,10 @@
           @include flex(start, start, 20px, column);
       
           h3 {
-            font-family: "Albert Sans", Sans-serif;
+            font-family: $albert_font;
             font-size: 20px;
             line-height: 1.4em;
-            color: #444;
+            color: $main-grey-color;
           }
       
           .line {
@@ -21,19 +21,17 @@
           }
       
           h1 {
-            font-family: "Tenor Sans", Sans-serif;
-            font-size: 50px;
+            font-family: $albert_font;
+            font-size: $font-h1;
             line-height: 58px;
-            color: #000;
+            color: $text-dark;
           }
         }
       
         .left_img {
           margin: 40px 0;
           position: relative;
-          display: flex;
-          justify-content: end;
-          align-items: end;
+          @include flex(end,end,null,null);
       
           img {
             object-fit: cover;
@@ -77,10 +75,10 @@
 
         .right_text {
             p {
-                font-family: "Albert Sans", Sans-serif;
+                font-family: $albert_font;
                 font-size: 20px;
                 line-height: 32px;
-                color: #444;
+                color: $main-grey-color;
             }
         }
     }

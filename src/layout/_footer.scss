@@ -1,8 +1,8 @@
 #footer {
     background-color: #fff;
     padding: 60px 0;
-    font-family: "Albert Sans", sans-serif;
-    color: #000;
+    font-family: $albert_font;
+    color: $text-dark;
     position: relative;
 
     #wave {
@@ -34,7 +34,7 @@
 
             p {
                 margin: 10px 0;
-                font-size: 16px;
+                font-size: $font-li-sm;
             }
 
             .app_buttons {
@@ -63,7 +63,7 @@
                 li {
                     margin-bottom: 20px;
                     font-size: 19px;
-                    font-family: "Albert Sans", Sans-serif;
+                    font-family: $albert_font;
               
 
                     &:first-child {
@@ -77,7 +77,7 @@
 
                     .call {
                         font-size: 40px;
-                        font-family: "Tenor Sans", Sans-serif;
+                        font-family: $tenor_font;
                     }
                 }
             }
@@ -85,15 +85,13 @@
     }
 
     .footer_bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(center,space-between,null,null);
         border-top: 1px solid #ddd;
         padding-top: 20px;
         text-align: center;
 
         p {
-            font-size: 14px;
+            font-size: $font-h3-sm;
             margin-bottom: 15px;
         }
 

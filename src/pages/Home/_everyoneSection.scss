@@ -1,5 +1,5 @@
 #everyone {
-    background-color: #FFFFFF;
+    background-color: $main-color;
     padding: 50px 0;
     position: relative;
 
@@ -40,8 +40,8 @@
                     transition: 0.3s;
 
                     &:hover {
-                        background-color: #000;
-                        color: #fff;
+                        background-color: $text-dark;
+                        color: $main-color;
                     }
                 }
             }
@@ -69,7 +69,7 @@
                 font-size: 16px;
                 font-weight: 500;
                 margin: 5px 0;
-                color: #000;
+                color: $text-dark;
             }
 
             .price {
@@ -83,7 +83,7 @@
                 }
 
                 span {
-                    color: #000;
+                    color: $text-dark;
                     font-weight: 600;
                 }
             }
@@ -94,10 +94,10 @@
         @include flex(center, center, 20px, column);
 
         h2 {
-            font-family: "Tenor Sans", Sans-serif;
-            font-size: 50px;
+            font-family: $tenor_font;
+            font-size:$font-h1;
             line-height: 58px;
-            color: #000;
+            color: $text-dark;
         }
 
         .line {
@@ -110,10 +110,10 @@
         }
 
         h3 {
-            font-family: "Albert Sans", Sans-serif;
+            font-family: $albert_font;
             font-size: 20px;
             line-height: 1.4em;
-            color: #444;
+            color: $main-grey-color;
         }
 
     }
@@ -177,32 +177,32 @@
             h4 {
                 margin-bottom: 3px;
                 color: #666666;
-                font-size: 15px;
-                font-family: "Albert Sans", Sans-serif;
+                font-size: $font-h2-sm;
+                font-family: $albert_font;
             }
 
             h3 {
                 margin-bottom: 5px;
-                font-size: 18px;
-                font-family: "Albert Sans", Sans-serif;
-                color: #000000;
+                font-size: $font-li-md;
+                font-family: $albert_font;
+                color: $text-dark;
             }
 
             .star {
 
                 i {
 
-                    font-size: 16px;
+                    font-size: $font-star;
                 }
             }
 
             .price {
                 margin-bottom: 7px;
-                font-size: 17px;
-                font-family: "Albert Sans", Sans-serif;
+                font-size: $font-h3;
+                font-family: $albert_font;
 
                 del {
-                    color: #000000;
+                    color: $text-dark;
                 }
 
                 span {

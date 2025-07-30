@@ -78,15 +78,13 @@ window.addEventListener("scroll", () => {
   
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-      // Tab-ların aktiv sinifini dəyişmək
       tabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
-  
-      // Müvafiq content göstərmək
+
       const target = tab.getAttribute('data-tab');
       tabContents.forEach(content => {
         if(content.id === target) {
-          content.style.display = 'flex'; // və ya block, lazım olan display tərzi
+          content.style.display = 'flex'; 
           content.classList.add('active');
         } else {
           content.style.display = 'none';

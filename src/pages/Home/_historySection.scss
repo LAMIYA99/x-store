@@ -1,5 +1,5 @@
 #history {
-    background-color: #FEF5EC;
+    background-color: $primary-color;
 
 
     .left {
@@ -8,8 +8,8 @@
 
         h2 {
             font-size: 20px;
-            font-family: "Albert Sans", Sans-serif;
-            color: #444444;
+            font-family: $albert_font;
+            color: $main-grey-color;
         }
 
         .line {
@@ -22,10 +22,10 @@
         }
 
         h1 {
-            font-family: "Tenor Sans", Sans-serif;
+            font-family: $tenor_font;
             font-size: 50px;
             line-height: 58px;
-            color: #000;
+            color: $text-dark;
         }
     }
 
@@ -35,17 +35,17 @@
         justify-content: center;
 
         p {
-            font-family: "Albert Sans", Sans-serif;
+            font-family: $albert_font;
             font-size: 18px;
             line-height: 32px;
-            color: #444;
+            color: $main-grey-color;
         }
     }
 
     .number {
         padding: 20px 0;
         h2 {
-            font-family: "Tenor Sans", Sans-serif;
+            font-family: $tenor_font;
             font-size: 70px;
             font-weight: 400;
             color: #738060;
@@ -83,16 +83,16 @@
         @include flex(null,null,20px,column);
         padding: 40px 0;
         h2 {
-            font-family: "Tenor Sans", Sans-serif;
+            font-family: $tenor_font;
             font-size: 25px;
             font-weight: 300;
-            color: #000000;
+            color: $text-dark;
         }
 
         h4 {
             font-size: 18px;
-            color: #444444;
-            font-family: "Albert Sans", Sans-serif;
+            color: $main-grey-color;
+            font-family: $albert_font;
             line-height: 1.6;
         }
 
