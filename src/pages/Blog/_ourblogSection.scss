@@ -1,0 +1,101 @@
+#our_blog {
+    background-color: $main-color;
+    padding: 120px 0;
+
+    .head {
+        font-size: 16px;
+        color: #666464;
+        margin-left: 54px;
+
+    }
+
+
+    .title {
+        @include flex(center, center, 16px, column);
+      
+        h1 {
+          font-family: $tenor_font;
+          font-size: $font-h1;
+          line-height: 58px;
+          color: $text-dark;
+          text-align: center;
+        }
+      }
+      
+      .cards {
+        margin: 50px 0;
+      
+        .cards_img {
+          position: relative;
+          overflow: hidden;
+      
+          img {
+            object-fit: cover;
+            transition: 0.4s ease-in-out;
+            width: 100%;
+            height: auto;
+      
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+      
+          .position_btn {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            z-index: 2;
+      
+            button {
+              color: $text-dark;
+              background-color: $main-color;
+              border-radius: 100px;
+              border: none;
+              padding: 0.4em 0.5em;
+              margin: 0 3px 5px;
+            }
+          }
+        }
+      
+        .cards_body {
+          margin: 20px 0;
+          @include flex(center, center, 18px, column);
+      
+          h3 {
+            text-align: center;
+            color: #000;
+            font-size: 21px;
+            font-family: "Tenor Sans", Sans-serif;
+            line-height: 30px;
+          }
+      
+          .read-more {
+            position: relative;
+            display: inline-block;
+            color: #738060;
+            font-size: 18px;
+            font-weight: 400;
+            cursor: pointer;
+            letter-spacing: 1px;
+      
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -4px;
+              width: 0%;
+              height: 1px;
+              background-color: #738060;
+              transition: width 0.4s ease;
+            }
+      
+            &:hover::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+      
+
+ 
+}
