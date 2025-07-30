@@ -139,6 +139,13 @@ table {
   border-spacing: 0;
 }
 
+#products .delivered .product_title .product_category .cards .cards_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 header #navbar {
   padding: 0px 50px;
   background-color: transparent;
@@ -506,7 +513,7 @@ header .swiper-slide .head_text button {
   font-family: "Tenor Sans", Sans-serif;
   font-size: 50px;
   line-height: 58px;
-  color: #000;
+  color: #000000;
 }
 #start .journey .line {
   text-align: center;
@@ -518,7 +525,7 @@ header .swiper-slide .head_text button {
   font-family: "Albert Sans", Sans-serif;
   font-size: 20px;
   line-height: 1.4em;
-  color: #444;
+  color: #444444;
 }
 #start .cards {
   display: flex;
@@ -539,10 +546,10 @@ header .swiper-slide .head_text button {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.4s ease;
 }
 #start .cards .card_img img:hover {
-  transform: scale(1.05);
-  transition: transform 0.4s ease;
+  transform: scale(1.08);
 }
 #start .cards .card_body {
   margin: 16px 0;
@@ -555,8 +562,8 @@ header .swiper-slide .head_text button {
 #start .cards .card_body h2 {
   text-align: center;
   font-size: 28px;
-  color: #000;
-  font-family: Tenor Sans, sans-serif;
+  color: #000000;
+  font-family: "Tenor Sans", Sans-serif;
   font-weight: 400;
 }
 #start .cards .card_body h4 {
@@ -740,12 +747,13 @@ header .swiper-slide .head_text button {
   color: #FFF;
 }
 #products .delivered .product_title ul li:hover {
+  transition: 0.4s ease-in-out;
   color: #444444;
   background-color: #FEF5EC;
 }
 #products .delivered .product_title .product_category {
   padding: 70px 60px;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   width: 100%;
   border-radius: 40px;
 }
@@ -757,11 +765,9 @@ header .swiper-slide .head_text button {
   gap: 20px;
   align-items: flex-start;
 }
-#products .delivered .product_title .product_category .cards .cards_img img {
+#products .delivered .product_title .product_category .cards .cards_img {
   width: 94px;
   height: 94px;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 #products .delivered .product_title .product_category .cards .cards_body {
   display: flex;
@@ -769,7 +775,7 @@ header .swiper-slide .head_text button {
   gap: 12px;
 }
 #products .delivered .product_title .product_category .cards .cards_body h2 {
-  color: #000;
+  color: #000000;
   font-family: "Albert Sans", Sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -782,11 +788,11 @@ header .swiper-slide .head_text button {
   display: flex;
   gap: 10px;
   font-size: 17px;
-  color: #000;
+  color: #000000;
 }
 #products .delivered .product_title .product_category .cards .cards_body h3 span {
   text-decoration: line-through;
-  color: #444;
+  color: #444444;
 }
 
 @media screen and (max-width: 992px) {
@@ -817,8 +823,9 @@ header .swiper-slide .head_text button {
     border-radius: 20px;
   }
   #products .product_title .product_category .cards {
-    flex-direction: column;
+    display: flex;
     gap: 12px;
+    flex-direction: column;
   }
   #products .product_title .product_category .cards .cards_img img {
     width: 70px;

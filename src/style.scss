@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap');
 @import"./base/reset";
+@import"../src/vendors/varaible";
+@import"../src/vendors/extend";
 @import"./vendors/mixin";
 @import"./layout/header";
 @import"../src/layout/footer";

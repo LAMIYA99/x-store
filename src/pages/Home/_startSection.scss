@@ -6,10 +6,10 @@
         @include flex (center, center, 22px, column);
 
         h1 {
-            font-family: "Tenor Sans", Sans-serif;
+            font-family: $tenor_font;
             font-size: 50px;
             line-height: 58px;
-            color: #000;
+            color: $text-dark;
         }
 
         .line {
@@ -22,10 +22,10 @@
         }
 
         h3 {
-            font-family: "Albert Sans", Sans-serif;
-            font-size: 20px;
+            font-family: $albert_font;
+            font-size: $font-li;
             line-height: 1.4em;
-            color: #444;
+            color: $main-grey-color;
         }
 
     }
@@ -48,10 +48,10 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-
+                transition: transform 0.4s ease;
                 &:hover {
-                    transform: scale(1.05);
-                    transition: transform 0.4s ease;
+                    transform: scale(1.08);
+          
                 }
             }
         }
@@ -63,16 +63,16 @@
             h2 {
                 text-align: center;
                 font-size: 28px;
-                color: #000;
-                font-family: Tenor Sans, sans-serif;
+                color: $text-dark;
+                font-family: $tenor_font;
                 font-weight: 400;
             }
 
             h4 {
                 font-size: 18px;
                 line-height: 27px;
-                color: #444444;
-                font-family: "Albert Sans", Sans-serif;
+                color: $main-grey-color;
+                font-family: $albert_font;
                 text-align: center;
             }
         }
