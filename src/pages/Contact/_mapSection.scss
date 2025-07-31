@@ -1,0 +1,11 @@
+#map{
+    padding-top: 94px;
+    .map-container {
+        width: 100%;
+        iframe {
+          display: block;
+          border: none;
+        }
+       
+    }
+}
