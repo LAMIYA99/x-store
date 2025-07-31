@@ -1,101 +1,196 @@
 #our_blog {
-    background-color: $main-color;
-    padding: 120px 0;
+  background-color: $main-color;
+  padding: 120px 0;
 
-    .head {
-        font-size: 16px;
-        color: #666464;
-        margin-left: 54px;
+  .head {
+    font-size: 16px;
+    color: #666464;
+    padding-left: 54px;
+    text-align: left;
+  }
 
-    }
-
+  .products {
+    margin-top: 100px;
 
     .title {
-        @include flex(center, center, 16px, column);
-      
-        h1 {
-          font-family: $tenor_font;
-          font-size: $font-h1;
-          line-height: 58px;
-          color: $text-dark;
-          text-align: center;
-        }
-      }
-      
-      .cards {
-        margin: 50px 0;
-      
-        .cards_img {
-          position: relative;
-          overflow: hidden;
-      
-          img {
-            object-fit: cover;
-            transition: 0.4s ease-in-out;
-            width: 100%;
-            height: auto;
-      
-            &:hover {
-              transform: scale(1.1);
-            }
-          }
-      
-          .position_btn {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            z-index: 2;
-      
-            button {
-              color: $text-dark;
-              background-color: $main-color;
-              border-radius: 100px;
-              border: none;
-              padding: 0.4em 0.5em;
-              margin: 0 3px 5px;
-            }
-          }
-        }
-      
-        .cards_body {
-          margin: 20px 0;
-          @include flex(center, center, 18px, column);
-      
-          h3 {
-            text-align: center;
-            color: #000;
-            font-size: 21px;
-            font-family: "Tenor Sans", Sans-serif;
-            line-height: 30px;
-          }
-      
-          .read-more {
-            position: relative;
-            display: inline-block;
-            color: #738060;
-            font-size: 18px;
-            font-weight: 400;
-            cursor: pointer;
-            letter-spacing: 1px;
-      
-            &::after {
-              content: "";
-              position: absolute;
-              left: 0;
-              bottom: -4px;
-              width: 0%;
-              height: 1px;
-              background-color: #738060;
-              transition: width 0.4s ease;
-            }
-      
-            &:hover::after {
-              width: 100%;
-            }
-          }
-        }
-      }
-      
+      @include flex(center, center, 16px, column);
 
- 
+
+      h1 {
+        font-family: $tenor_font;
+        font-size: $font-h1;
+        line-height: 58px;
+        color: $text-dark;
+        text-align: center;
+      }
+    }
+
+    .cards {
+      margin: 50px 0;
+
+      .cards_img {
+        position: relative;
+        overflow: hidden;
+
+        img {
+          object-fit: cover;
+          transition: 0.4s ease-in-out;
+          width: 100%;
+          height: auto;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        .position_btn {
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          z-index: 2;
+
+          button {
+            color: $text-dark;
+            background-color: $main-color;
+            border-radius: 100px;
+            border: none;
+            padding: 0.4em 0.5em;
+            margin: 0 3px 5px;
+          }
+        }
+      }
+
+      .cards_body {
+        margin: 20px 0;
+        @include flex(center, center, 18px, column);
+
+        h3 {
+          text-align: center;
+          color: #000;
+          font-size: 21px;
+          font-family: "Tenor Sans", Sans-serif;
+          line-height: 30px;
+        }
+
+        .read-more {
+          position: relative;
+          display: inline-block;
+          color: #738060;
+          font-size: 18px;
+          font-weight: 400;
+          cursor: pointer;
+          letter-spacing: 1px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0%;
+            height: 1px;
+            background-color: #738060;
+            transition: width 0.4s ease;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 992px) {
+    .cards_body h3 {
+      font-size: 18px;
+    }
+
+    .read-more {
+      font-size: 15px;
+    }
+
+    .head {
+      padding-left: 20px;
+    }
+
+    .title h1 {
+      font-size: 36px;
+      line-height: 46px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .title h1 {
+      font-size: 32px;
+      line-height: 42px;
+    }
+
+    .cards_body h3 {
+      font-size: 17px;
+      line-height: 26px;
+    }
+
+    .read-more {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .title h1 {
+      font-size: 28px;
+      line-height: 38px;
+    }
+
+    .cards {
+      margin: 30px 0;
+    }
+
+    .cards_body {
+      gap: 10px;
+    }
+
+    .cards_body h3 {
+      font-size: 16px;
+    }
+
+    .read-more {
+      font-size: 13px;
+    }
+
+    .head {
+      font-size: 14px;
+      padding-left: 12px;
+    }
+  }
+
+  .finish {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    ul {
+      display: flex;
+      gap: 16px;
+
+      li {
+        font-size: 19px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background-color: #738060;
+          color: white;
+        }
+      }
+    }
+  }
 }

@@ -1327,46 +1327,50 @@ header .swiper-slide .head_text button {
 #our_blog .head {
   font-size: 16px;
   color: #666464;
-  margin-left: 54px;
+  padding-left: 54px;
+  text-align: left;
 }
-#our_blog .title {
+#our_blog .products {
+  margin-top: 100px;
+}
+#our_blog .products .title {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
   flex-direction: column;
 }
-#our_blog .title h1 {
+#our_blog .products .title h1 {
   font-family: "Tenor Sans", Sans-serif;
   font-size: 50px;
   line-height: 58px;
   color: #000000;
   text-align: center;
 }
-#our_blog .cards {
+#our_blog .products .cards {
   margin: 50px 0;
 }
-#our_blog .cards .cards_img {
+#our_blog .products .cards .cards_img {
   position: relative;
   overflow: hidden;
 }
-#our_blog .cards .cards_img img {
+#our_blog .products .cards .cards_img img {
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.4s ease-in-out;
   width: 100%;
   height: auto;
 }
-#our_blog .cards .cards_img img:hover {
+#our_blog .products .cards .cards_img img:hover {
   transform: scale(1.1);
 }
-#our_blog .cards .cards_img .position_btn {
+#our_blog .products .cards .cards_img .position_btn {
   position: absolute;
   bottom: 10px;
   left: 10px;
   z-index: 2;
 }
-#our_blog .cards .cards_img .position_btn button {
+#our_blog .products .cards .cards_img .position_btn button {
   color: #000000;
   background-color: #FFF;
   border-radius: 100px;
@@ -1374,7 +1378,7 @@ header .swiper-slide .head_text button {
   padding: 0.4em 0.5em;
   margin: 0 3px 5px;
 }
-#our_blog .cards .cards_body {
+#our_blog .products .cards .cards_body {
   margin: 20px 0;
   display: flex;
   align-items: center;
@@ -1382,14 +1386,14 @@ header .swiper-slide .head_text button {
   gap: 18px;
   flex-direction: column;
 }
-#our_blog .cards .cards_body h3 {
+#our_blog .products .cards .cards_body h3 {
   text-align: center;
   color: #000;
   font-size: 21px;
   font-family: "Tenor Sans", Sans-serif;
   line-height: 30px;
 }
-#our_blog .cards .cards_body .read-more {
+#our_blog .products .cards .cards_body .read-more {
   position: relative;
   display: inline-block;
   color: #738060;
@@ -1398,7 +1402,7 @@ header .swiper-slide .head_text button {
   cursor: pointer;
   letter-spacing: 1px;
 }
-#our_blog .cards .cards_body .read-more::after {
+#our_blog .products .cards .cards_body .read-more::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1408,6 +1412,80 @@ header .swiper-slide .head_text button {
   background-color: #738060;
   transition: width 0.4s ease;
 }
-#our_blog .cards .cards_body .read-more:hover::after {
+#our_blog .products .cards .cards_body .read-more:hover::after {
   width: 100%;
+}
+@media screen and (max-width: 992px) {
+  #our_blog .cards_body h3 {
+    font-size: 18px;
+  }
+  #our_blog .read-more {
+    font-size: 15px;
+  }
+  #our_blog .head {
+    padding-left: 20px;
+  }
+  #our_blog .title h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #our_blog .title h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  #our_blog .cards_body h3 {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  #our_blog .read-more {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #our_blog .title h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  #our_blog .cards {
+    margin: 30px 0;
+  }
+  #our_blog .cards_body {
+    gap: 10px;
+  }
+  #our_blog .cards_body h3 {
+    font-size: 16px;
+  }
+  #our_blog .read-more {
+    font-size: 13px;
+  }
+  #our_blog .head {
+    font-size: 14px;
+    padding-left: 12px;
+  }
+}
+#our_blog .finish {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#our_blog .finish ul {
+  display: flex;
+  gap: 16px;
+}
+#our_blog .finish ul li {
+  font-size: 19px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#our_blog .finish ul li:hover {
+  background-color: #738060;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
