@@ -94,23 +94,15 @@ window.addEventListener("scroll", () => {
     });
   });
 
+  const formLine = document.querySelector('.right .line');
 
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('scroll-in');
-        }
-      });
-    }, {
-      threshold: 0.2
-    });
-
-    document.querySelectorAll('.form-field').forEach(field => {
-      observer.observe(field);
-    });
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const movement = Math.sin(scrollY / 50) * 10; 
+    formLine.style.transform = `translateY(-50%) translateX(${movement}px)`;
   });
+  
+
 
 
   

@@ -387,7 +387,7 @@ header .swiper-slide .head_text button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px;
+  gap: 10px;
   margin-bottom: 40px;
 }
 #footer .footer_top .footer_logo {
@@ -1956,77 +1956,138 @@ header .swiper-slide .head_text button {
     max-width: 90%;
   }
 }
-.contact-section {
+#contactus {
+  background-color: #FDF4EC;
+}
+#contactus .have {
+  margin: 0 210px;
+  padding: 110px 0 100px;
   display: flex;
-  flex-wrap: wrap;
-  padding: 60px 20px;
-  background: #fef6f0;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
 }
-.contact-section .contact-left {
-  flex: 1;
-  padding: 20px;
-}
-.contact-section .contact-left h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-  color: #222;
-}
-.contact-section .contact-left img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-.contact-section .contact-right {
-  flex: 1;
-  padding: 20px;
+#contactus .have .head_contact {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
 }
-.contact-section .contact-right form {
-  width: 100%;
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+#contactus .have .head_contact h2 {
+  font-family: "Albert Sans", sans-serif;
+  font-size: 20px;
+  color: #444;
 }
-.contact-section .contact-right form .form-field {
+#contactus .have .head_contact .line {
+  width: 90px;
+  height: 1px;
+  background-color: #b0abab;
+}
+#contactus .have .head_contact h1 {
+  font-family: "Tenor Sans", Sans-serif;
+  font-size: 50px;
+  line-height: 58px;
+  color: #000;
+  font-weight: 400;
+}
+#contactus .have .left_img {
+  position: relative;
+  margin-top: 30px;
+  flex: 1;
+}
+#contactus .have .left_img img {
   width: 100%;
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid #ddd;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+#contactus .have .right {
+  flex: 1;
+  position: relative;
+  margin-top: 300px;
+}
+#contactus .have .right .line {
+  background-color: #fff;
+  padding: 50px 40px 70px 40px;
   border-radius: 5px;
-  font-size: 1rem;
-  opacity: 0;
-  transform: translateX(0);
-  transition: all 0.7s ease;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.03), 0 0 20px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  top: 50%;
+  left: -16.666%;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  transition: transform 0.2s ease;
 }
-.contact-section .contact-right form textarea {
-  resize: none;
-  min-height: 100px;
+#contactus .have .right .line input {
+  padding: 12px 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+  color: #888;
+  min-height: 60px;
+  font-family: "Albert Sans", sans-serif;
+  font-size: 17px;
 }
-.contact-section .contact-right form button {
-  padding: 12px 25px;
-  font-size: 1rem;
-  background: #fff;
-  border: 1px solid #333;
-  cursor: pointer;
-  transition: background 0.3s;
+#contactus .have .right button {
+  border: 1px solid grey;
+  background-color: #fff;
+  width: 190px;
+  font-size: 19px;
+  border-radius: 4px;
+  padding: 20px 30px;
 }
-.contact-section .contact-right form button:hover {
-  background: #333;
-  color: #fff;
+#contactus .have .right button:hover {
+  background-color: black;
+  color: white;
 }
-.contact-section .contact-right form .from-left.scroll-in {
-  transform: translateX(0);
-  opacity: 1;
+@media (max-width: 992px) {
+  #contactus .have {
+    margin: 0 30px;
+    flex-direction: column;
+  }
+  #contactus .have .right {
+    margin-top: 50px;
+  }
+  #contactus .have .right .line {
+    position: relative;
+    top: auto;
+    left: 0;
+    transform: none;
+    width: 100%;
+  }
 }
-.contact-section .contact-right form .from-right.scroll-in {
-  transform: translateX(0);
-  opacity: 1;
-}
-.contact-section .contact-right form .from-left {
-  transform: translateX(-100px);
-}
-.contact-section .contact-right form .from-right {
-  transform: translateX(100px);
+@media (max-width: 768px) {
+  #contactus .have {
+    margin: 0 20px;
+  }
+  #contactus .have .head_contact h1 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  #contactus .have .right {
+    margin-top: 40px;
+  }
+  #contactus .have .right .line {
+    padding: 20px;
+    gap: 15px;
+  }
+  #contactus .have .right input {
+    font-size: 15px;
+    padding: 10px;
+  }
+  #contactus .have .left_img {
+    margin-top: 30px;
+  }
+  #contactus .have .left_img img {
+    width: 100%;
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
