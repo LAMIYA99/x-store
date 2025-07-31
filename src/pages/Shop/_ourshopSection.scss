@@ -1,0 +1,127 @@
+#our_shop {
+    padding-top: 100px 0;
+    background-color: #fff;
+
+    .shop_title {
+        padding-top: 100px;
+        text-align: center;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        h1 {
+            font-family: $tenor_font;
+            font-size: 50px;
+            line-height: 58px;
+            color: #000;
+            font-weight: 400;
+        }
+
+        p {
+            padding: 0% 15% 0% 15%;
+            text-align: center;
+            font-family: "Albert Sans", Sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 31px;
+            color: #605f5f;
+        }
+    }
+
+    .shop_filters {
+        display: flex;
+        gap: 10px;
+
+        margin-bottom: 50px;
+
+        .dropdown {
+            position: relative;
+
+            .dropbtn {
+                text-align: start;
+                width: 318px;
+                height: 48px;
+                background-color: #fff;
+                font-size: 20px;
+                color: #444;
+                font-weight: 300;
+                border-style: solid;
+                border-width: 1px 1px 1px 1px;
+                border-color: #e1e1e1;
+                padding: 8px 20px 8px 20px;
+                border-radius: 4px 4px 4px 4px;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                top: 45px;
+                left: 0;
+                font-size: 20px;
+                font-weight: 300;
+                background-color: white;
+                min-width: 318px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+                z-index: 100;
+
+                a {
+                    padding: 20px 20px;
+                    display: block;
+                    text-decoration: none;
+                    color: #333;
+
+                    &:hover {
+                        background-color: #f2f2f2;
+                    }
+                }
+            }
+
+            &:hover .dropdown-content {
+                display: block;
+            }
+        }
+
+        select {
+            text-align: start;
+            width: 318px;
+            height: 48px;
+            background-color: #fff;
+            font-size: 20px;
+            font-weight: 300;
+            color: #444;
+            border-style: solid;
+            border-width: 1px 1px 1px 1px;
+            border-color: #e1e1e1;
+            padding: 8px 20px 8px 20px;
+            border-radius: 4px 4px 4px 4px;
+        }
+
+        .search_btn {
+        width: 318px;
+            height: 45px;
+            padding: 12px 20px;
+            background-color: #7c8b5c;
+            border: none;
+            border-radius: 6px;
+         
+            font-family: "Albert Sans", Sans-serif;
+            font-size: 19px;
+            font-weight: 400;
+            color: #fff;
+            cursor: pointer;
+
+            i {
+                margin-right: 6px;
+             width: 19px;
+            }
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
