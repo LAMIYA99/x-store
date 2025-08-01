@@ -21,6 +21,27 @@ var swiper = new Swiper(".mySwipper", {
   },
 
 });
+var swiper = new Swiper(".mySwipperrr", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+  }, breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+
+});
 
 window.addEventListener('scroll', () => {
   const header = document.getElementById('navbar');
@@ -102,6 +123,14 @@ window.addEventListener("scroll", () => {
     formLine.style.transform = `translateY(-50%) translateX(${movement}px)`;
   });
   
+
+
+  function playVideo() {
+    document.querySelector(".video-thumbnail").style.display = "none";
+    document.querySelector(".video-frame").style.display = "block";
+  }
+
+
 
 
 

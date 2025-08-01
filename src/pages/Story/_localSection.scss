@@ -1,0 +1,23 @@
+#local {
+ padding: 100px;
+.local_text{
+  
+    @include flex(center,center,20px,column);
+    h2{
+        font-family: "Tenor Sans", Sans-serif;
+        font-size: 50px;
+        line-height: 1.4em;
+        color: #222;
+        text-align: center;
+        font-weight: 300;
+    }
+    p{
+        padding: 0% 15% 0% 15%;
+        text-align: center;
+        font-size: 19px;
+        color: #757373;
+        font-family:  "Albert Sans", Sans-serif;
+        line-height: 1.6;
+    }
+}
+}

@@ -1,0 +1,121 @@
+#video {
+  padding: 100px;
+  background-color: #FDF4EC;
+
+  .left_video {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+
+    .video-thumbnail,
+    .video-frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 576px;
+      height: 431px;
+    }
+
+    .video-thumbnail {
+      cursor: pointer;
+      z-index: 2;
+
+      img {
+        width: 576px;
+        height: 431px;
+        object-fit: cover;
+        display: block;
+        border-radius: 3px;
+      }
+
+      .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(206, 206, 206, 0.666);
+        color: white;
+        font-size: 40px;
+        padding: 15px 20px;
+        border-radius: 50%;
+        transition: 0.3s ease;
+        animation: pulse 2s infinite ease-in-out;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: translate(-50%, -50%) scale(1);
+          box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+        }
+
+        50% {
+          transform: translate(-50%, -50%) scale(1.08);
+          box-shadow: 0 0 0 15px rgba(139, 139, 139, 0);
+        }
+
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+          box-shadow: 0 0 0 0 rgba(248, 245, 245, 0.971);
+        }
+      }
+
+
+      &:hover .play-button {
+        background: rgba(182, 181, 181, 0.457);
+      }
+    }
+
+    .video-frame {
+      z-index: 1;
+      display: none;
+
+      iframe {
+        width: 576px;
+        height: 431px;
+
+        border: none;
+      }
+    }
+  }
+
+  .right {
+padding: 18px;
+    .right_text {
+      @include flex(start,start,18px,column);
+      h2 {
+        font-family: "Tenor Sans", Sans-serif;
+        font-size: 50px;
+        line-height: 1.4em;
+        color: #222;
+      }
+
+      p {
+        font-size: 19px;
+        color: #666666;
+        font-family: "Albert Sans", sans-serif;
+        line-height: 1.7;
+        font-weight: 300;
+
+      }
+
+      button {
+        padding: 28px 2px;
+        width: 209px;
+        height: 32px;
+        font-size: 18px;
+        font-family: "Albert Sans", sans-serif;
+        background-color: #728060;
+        color: #fff;
+        border: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+    }
+  }
+
+
+}
