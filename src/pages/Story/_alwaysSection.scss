@@ -1,4 +1,4 @@
-#always{
+#always {
     background-position: center center;
     background-repeat: repeat;
     background-size: cover;
@@ -15,34 +15,51 @@
         position: absolute;
         bottom: -50px;
     }
-    .always_swiper{
+
+    .always_swiper {
         background-color: #728060e6;
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        .cards{
-            .title{
-                h2{
+
+        .cards {
+            cursor: grab;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            .title {
+                h2 {
                     color: #fff;
                     text-align: start;
                     font-size: 30px;
-                    font-family: "Tenor Sans",Sans-serif;
+                    font-family: "Tenor Sans", Sans-serif;
                     font-weight: 300;
                     line-height: 1.6;
                 }
             }
-            .body{
-                .star{
-padding-top: 40px;
+
+            .body {
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+
+                .star {
+                    padding-top: 40px;
                 }
-                .body_finish{
+
+                .body_finish {
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
                     padding-top: 20px;
                     display: flex;
                     flex-direction: column;
                     gap: 8px;
-                    h3{
+
+                    h3 {
                         font-family: "Albert Sans", Sans-serif;
                         font-size: 17px;
                         font-weight: 500;
@@ -50,7 +67,8 @@ padding-top: 40px;
                         font-weight: 400;
                         margin: 0 0 0 0;
                     }
-                    h4{
+
+                    h4 {
                         font-family: "Albert Sans", Sans-serif;
                         font-size: 15px;
                         color: #FFF;
