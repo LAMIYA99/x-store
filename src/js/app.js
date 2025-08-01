@@ -1,4 +1,8 @@
-var swiper = new Swiper(".mySwiper", {});
+var swiper = new Swiper(".LogoSwiper", {
+  slidesPerView: 6,
+  spaceBetween: 0,
+  loop: true,
+});
 
 var swiper = new Swiper(".mySwipper", {
   slidesPerView: 4,
@@ -57,7 +61,7 @@ window.addEventListener("scroll", () => {
   const parallaxImage = document.querySelector(".position_img");
   if (parallaxImage) {
     const scrollY = window.scrollY;
-    const offset = scrollY * 0.05; 
+    const offset = scrollY * 0.05;
     parallaxImage.style.transform = `translateY(${offset}px)`;
   }
 });
@@ -67,71 +71,70 @@ window.addEventListener("scroll", () => {
 
 
 
-  const deadline = new Date("2025-12-31T23:59:59").getTime();
+const deadline = new Date("2025-12-31T23:59:59").getTime();
 
-  function updateTimer() {
-    const now = new Date().getTime();
-    const diff = deadline - now;
+function updateTimer() {
+  const now = new Date().getTime();
+  const diff = deadline - now;
 
-    if (diff <= 0) {
-      document.querySelectorAll(".time").forEach(el => el.textContent = "00");
-      clearInterval(timerInterval);
-      return;
-    }
-
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((diff / (1000 * 60)) % 60);
-    const seconds = Math.floor((diff / 1000) % 60);
-
-    document.querySelector('.time[data-label="days"]').textContent = String(days).padStart(2, "0");
-    document.querySelector('.time[data-label="hours"]').textContent = String(hours).padStart(2, "0");
-    document.querySelector('.time[data-label="minutes"]').textContent = String(minutes).padStart(2, "0");
-    document.querySelector('.time[data-label="seconds"]').textContent = String(seconds).padStart(2, "0");
+  if (diff <= 0) {
+    document.querySelectorAll(".time").forEach(el => el.textContent = "00");
+    clearInterval(timerInterval);
+    return;
   }
 
-  const timerInterval = setInterval(updateTimer, 1000);
-  updateTimer(); 
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((diff / (1000 * 60)) % 60);
+  const seconds = Math.floor((diff / 1000) % 60);
+
+  document.querySelector('.time[data-label="days"]').textContent = String(days).padStart(2, "0");
+  document.querySelector('.time[data-label="hours"]').textContent = String(hours).padStart(2, "0");
+  document.querySelector('.time[data-label="minutes"]').textContent = String(minutes).padStart(2, "0");
+  document.querySelector('.time[data-label="seconds"]').textContent = String(seconds).padStart(2, "0");
+}
+
+const timerInterval = setInterval(updateTimer, 1000);
+updateTimer();
 
 
-  const tabs = document.querySelectorAll('.tab-menu li');
-  const tabContents = document.querySelectorAll('.tab-content');
-  
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
+const tabs = document.querySelectorAll('.tab-menu li');
+const tabContents = document.querySelectorAll('.tab-content');
 
-      const target = tab.getAttribute('data-tab');
-      tabContents.forEach(content => {
-        if(content.id === target) {
-          content.style.display = 'flex'; 
-          content.classList.add('active');
-        } else {
-          content.style.display = 'none';
-          content.classList.remove('active');
-        }
-      });
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+
+    const target = tab.getAttribute('data-tab');
+    tabContents.forEach(content => {
+      if (content.id === target) {
+        content.style.display = 'flex';
+        content.classList.add('active');
+      } else {
+        content.style.display = 'none';
+        content.classList.remove('active');
+      }
     });
   });
+});
 
-  const formLine = document.querySelector('.right .line');
+const formLine = document.querySelector('.right .line');
 
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    const movement = Math.sin(scrollY / 50) * 10; 
-    formLine.style.transform = `translateY(-50%) translateX(${movement}px)`;
-  });
-  
-
-
-  function playVideo() {
-    document.querySelector(".video-thumbnail").style.display = "none";
-    document.querySelector(".video-frame").style.display = "block";
-  }
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  const movement = Math.sin(scrollY / 50) * 10;
+  formLine.style.transform = `translateY(-50%) translateX(${movement}px)`;
+});
 
 
 
+function playVideo() {
+  document.querySelector(".video-thumbnail").style.display = "none";
+  document.querySelector(".video-frame").style.display = "block";
+}
 
 
-  
+
+
+

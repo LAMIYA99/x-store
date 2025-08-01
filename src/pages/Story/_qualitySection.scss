@@ -1,5 +1,5 @@
 #quality {
-    padding: 100px;
+    padding-top: 100px;
 
     .quality_title {
         @include flex(center, center, 18px, column);
@@ -12,12 +12,10 @@
         }
 
         .line {
-
             text-align: center;
             width: 90px;
             height: 1px;
             border: 1px solid #b0abab;
-
         }
 
         h4 {
@@ -26,26 +24,88 @@
             font-family: "Albert Sans", sans-serif;
             line-height: 1.7;
             color: #666666;
-
         }
     }
 
     .quality_img {
         margin: 50px 0;
+        position: relative;
+        overflow: visible;
+        z-index: 1;
 
         img {
             width: 100%;
             height: 500px;
             object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .hotspot {
+            position: absolute;
+            cursor: pointer;
+            z-index: 2;
+
+            .dot {
+                width: 18px;
+                height: 18px;
+                background-color: white;
+                border: 2px solid #74b816;
+                border-radius: 50%;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s ease;
+            }
+
+            .tooltip {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(10px);
+                transition: all 0.3s ease;
+                position: absolute;
+                top: -60px;
+                left: 30px;
+                padding: 10px 15px;
+                background-color: white;
+                color: #333;
+                font-size: 14px;
+                font-family: "Albert Sans", sans-serif;
+                border-radius: 8px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+                white-space: nowrap;
+                z-index: 10;
+            }
+
+            &:hover .tooltip {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+
+        .hs-1 {
+            top: 25%;
+            left: 30%;
+        }
+
+        .hs-2 {
+            top: 50%;
+            left: 50%;
+        }
+
+        .hs-3 {
+            top: 70%;
+            left: 75%;
         }
     }
-    .quality_logo{
-      
-        margin: 100px 0;
+
+    .quality_logo {
+        display: flex;
+        align-items: center;
+        padding-top: 50px;
         padding: 0px 130px;
-        ul{
-            display: flex;
-            gap: 100px;
+
+        img {
+            max-width: 100px;
         }
+
     }
 }
