@@ -1,0 +1,41 @@
+#blog-preview {
+    padding: 40px 0;
+  
+    .preview-box {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border: 1px solid #eee;
+      padding: 16px;
+      border-radius: 6px;
+      background-color: #fdfdfd;
+  
+      img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+  
+      .preview-text {
+        font-size: 18px;
+        font-family: "Albert Sans", sans-serif;
+        color: #222222;
+        text-decoration: none;
+        line-height: 1.4;
+        span{
+            font-weight: 500;
+        }
+  
+        .arrow {
+          margin-right: 8px;
+          font-size: 18px;
+        }
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
