@@ -1,0 +1,54 @@
+#check {
+padding: 100px 0;
+    background-color: #FEF5EC;
+    .check_out {
+
+        display: flex;
+        gap: 40px;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .cards{
+                display: flex;
+                gap: 6px;
+                i{
+                    font-size: 24px;
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: #444444;
+                    font-family: "Albert Sans", Sans-serif;
+                    line-height: 1.6;
+                    span{
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .cards{
+                display: flex;
+                gap: 6px;
+                i{
+                    font-size: 24px;
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: #444444;
+                    font-family: "Albert Sans", Sans-serif;
+                    line-height: 1.6;
+                    span{
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

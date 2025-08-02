@@ -1,0 +1,214 @@
+#review {
+    background-color: #FEF5EC;
+
+    .review-section {
+        padding: 60px 0;
+
+
+        .review_head {
+            text-align: center;
+
+            h1 {
+                font-family: "Tenor Sans", Sans-serif;
+                font-size: 40px;
+                line-height: 1.4em;
+                color: #000;
+            }
+        }
+
+        h3 {
+            padding-top: 50px;
+            color: #000;
+            font-family: "Albert Sans", Sans-serif;
+            font-size: 22px;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        .review-list {
+            .review-card {
+
+                padding: 20px;
+
+
+                .review-header {
+                    display: flex;
+                    align-items: start;
+                    gap: 30px;
+                    padding-top: 20px;
+
+
+                    .avatar {
+                        width: 80px;
+                        height: 80px;
+
+                    }
+
+                    .rewiev_body {
+                        
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+
+                        .text {
+                            padding-top: 14px;
+                            gap: 10px;
+                            display: flex;
+
+                            strong {
+                                font-size: 16px;
+                                font-weight: 500;
+                                
+                            }
+
+
+                        }
+
+                       
+                            h3 {
+                                font-size: 14px;
+                                font-family: "Albert Sans", Sans-serif;
+                                color: #888;
+                            }
+                      
+                            .p {
+                                p {
+                                  font-size: 16px;
+                                  line-height: 1.6;
+                                  color: #333;
+                                  font-family: "Albert Sans", Sans-serif;
+                                }
+                              }
+
+
+                    }
+                }
+
+
+            }
+        }
+
+        .review-form {
+            h3{
+                color: #000;
+    font-family: "Albert Sans", Sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+            }
+            form {
+                padding-top: 20px;
+                display: flex;
+                flex-direction: column;
+
+                .note {
+                    font-size: 20px;
+                    color: #666;
+                    margin-bottom: 15px;
+                }
+                .rating{
+                    font-size: 16px;
+                    font-family: "Albert Sans", Sans-serif;
+                    font-weight: 300;
+                }
+
+                label {
+                    margin: 10px 0 5px;
+                    font-weight: 500;
+                }
+                .your{
+                    font-size: 16px;
+                    font-family: "Albert Sans", Sans-serif;
+                    font-weight: 300;
+                
+                }
+                #review {
+                    background-color: white;
+                    padding: 2.07em;
+                }
+                .name{
+                    font-size: 16px;
+                    font-family: "Albert Sans", Sans-serif;
+                    font-weight: 300; 
+                }
+                .email{
+                    font-size: 16px;
+                    font-family: "Albert Sans", Sans-serif;
+                    font-weight: 300;
+                }
+
+                input[type="text"],
+                input[type="email"],
+                textarea {
+                    padding: 14px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                }
+
+                textarea {
+                    resize: vertical;
+                }
+
+                .stars-input {
+                    font-size: 1.5rem;
+                    color: #ccc;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+
+                    span:hover,
+                    span:hover~span {
+                        color: #ffc107;
+                    }
+                }
+
+                .save-info {
+                    display: flex;
+                    align-items: flex-start;
+                    align-items: center;
+                    margin: 15px 0;
+
+                    input {
+                        margin-right: 10px;
+                    }
+
+                    label {
+                        font-family: "Albert Sans", Sans-serif;
+                        font-weight: 300;
+                        font-size: 1.14rem;
+                        color: #444;
+                    }
+                }
+
+                button {
+             width: 125px;
+             height: 58px;
+                    background-color: #333;
+                    padding: 12px 30px;
+                  color: black;
+                 font-size: 20px;
+                 font-weight: 500;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    background-color: #FEF5EC;
+                    cursor: pointer;
+
+
+                    &:hover {
+                        background-color: black;
+
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .review-list,
+            .review-form {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

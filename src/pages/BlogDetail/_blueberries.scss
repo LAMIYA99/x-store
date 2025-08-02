@@ -11,13 +11,20 @@
 
 
     .left_img {
-
+        overflow: hidden;
+        max-width: 100%;
+    
         img {
-
             object-fit: contain;
             max-width: 550px;
+            transition: transform 0.4s ease-in-out;
+    
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
+    
 
     .product {
 

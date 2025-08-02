@@ -2694,10 +2694,18 @@ header .swiper-slide .head_text button {
   padding-left: 54px;
   text-align: left;
 }
+#product-detail .left_img {
+  overflow: hidden;
+  max-width: 100%;
+}
 #product-detail .left_img img {
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 550px;
+  transition: transform 0.4s ease-in-out;
+}
+#product-detail .left_img img:hover {
+  transform: scale(1.1);
 }
 #product-detail .product h1 {
   font-family: "Tenor Sans", Sans-serif;
@@ -2892,4 +2900,262 @@ header .swiper-slide .head_text button {
   font-size: 16px;
   color: #444;
   font-family: "Albert Sans", Sans-serif;
+}
+
+#creamy {
+  background-color: #FEF5EC;
+  padding: 50px;
+}
+#creamy .cheese .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  flex-direction: column;
+}
+#creamy .cheese .title h1 {
+  font-family: "Tenor Sans", Sans-serif;
+  font-size: 40px;
+  line-height: 58px;
+  color: #222;
+  font-weight: 300;
+}
+#creamy .cheese .title p {
+  padding: 0% 10% 0% 10%;
+  text-align: center;
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #444;
+}
+#creamy .more_img {
+  margin-top: 50px;
+  overflow: hidden;
+  height: 520px;
+}
+#creamy .more_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#check {
+  padding: 100px 0;
+  background-color: #FEF5EC;
+}
+#check .check_out {
+  display: flex;
+  gap: 40px;
+}
+#check .check_out .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#check .check_out .left .cards {
+  display: flex;
+  gap: 6px;
+}
+#check .check_out .left .cards i {
+  font-size: 24px;
+}
+#check .check_out .left .cards p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #444444;
+  font-family: "Albert Sans", Sans-serif;
+  line-height: 1.6;
+}
+#check .check_out .left .cards p span {
+  font-weight: 500;
+}
+#check .check_out .right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#check .check_out .right .cards {
+  display: flex;
+  gap: 6px;
+}
+#check .check_out .right .cards i {
+  font-size: 24px;
+}
+#check .check_out .right .cards p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #444444;
+  font-family: "Albert Sans", Sans-serif;
+  line-height: 1.6;
+}
+#check .check_out .right .cards p span {
+  font-weight: 500;
+}
+
+#review {
+  background-color: #FEF5EC;
+}
+#review .review-section {
+  padding: 60px 0;
+}
+#review .review-section .review_head {
+  text-align: center;
+}
+#review .review-section .review_head h1 {
+  font-family: "Tenor Sans", Sans-serif;
+  font-size: 40px;
+  line-height: 1.4em;
+  color: #000;
+}
+#review .review-section h3 {
+  padding-top: 50px;
+  color: #000;
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+#review .review-section .review-list .review-card {
+  padding: 20px;
+}
+#review .review-section .review-list .review-card .review-header {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  padding-top: 20px;
+}
+#review .review-section .review-list .review-card .review-header .avatar {
+  width: 80px;
+  height: 80px;
+}
+#review .review-section .review-list .review-card .review-header .rewiev_body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+#review .review-section .review-list .review-card .review-header .rewiev_body .text {
+  padding-top: 14px;
+  gap: 10px;
+  display: flex;
+}
+#review .review-section .review-list .review-card .review-header .rewiev_body .text strong {
+  font-size: 16px;
+  font-weight: 500;
+}
+#review .review-section .review-list .review-card .review-header .rewiev_body h3 {
+  font-size: 14px;
+  font-family: "Albert Sans", Sans-serif;
+  color: #888;
+}
+#review .review-section .review-list .review-card .review-header .rewiev_body .p p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  font-family: "Albert Sans", Sans-serif;
+}
+#review .review-section .review-form h3 {
+  color: #000;
+  font-family: "Albert Sans", Sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+#review .review-section .review-form form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#review .review-section .review-form form .note {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 15px;
+}
+#review .review-section .review-form form .rating {
+  font-size: 16px;
+  font-family: "Albert Sans", Sans-serif;
+  font-weight: 300;
+}
+#review .review-section .review-form form label {
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+#review .review-section .review-form form .your {
+  font-size: 16px;
+  font-family: "Albert Sans", Sans-serif;
+  font-weight: 300;
+}
+#review .review-section .review-form form #review {
+  background-color: white;
+  padding: 2.07em;
+}
+#review .review-section .review-form form .name {
+  font-size: 16px;
+  font-family: "Albert Sans", Sans-serif;
+  font-weight: 300;
+}
+#review .review-section .review-form form .email {
+  font-size: 16px;
+  font-family: "Albert Sans", Sans-serif;
+  font-weight: 300;
+}
+#review .review-section .review-form form input[type=text],
+#review .review-section .review-form form input[type=email],
+#review .review-section .review-form form textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+#review .review-section .review-form form textarea {
+  resize: vertical;
+}
+#review .review-section .review-form form .stars-input {
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+#review .review-section .review-form form .stars-input span:hover,
+#review .review-section .review-form form .stars-input span:hover ~ span {
+  color: #ffc107;
+}
+#review .review-section .review-form form .save-info {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  margin: 15px 0;
+}
+#review .review-section .review-form form .save-info input {
+  margin-right: 10px;
+}
+#review .review-section .review-form form .save-info label {
+  font-family: "Albert Sans", Sans-serif;
+  font-weight: 300;
+  font-size: 1.14rem;
+  color: #444;
+}
+#review .review-section .review-form form button {
+  width: 125px;
+  height: 58px;
+  background-color: #333;
+  padding: 12px 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #FEF5EC;
+  cursor: pointer;
+}
+#review .review-section .review-form form button:hover {
+  background-color: black;
+  color: white;
+}
+@media (max-width: 768px) {
+  #review .review-section .review-list,
+  #review .review-section .review-form {
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

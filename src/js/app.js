@@ -137,4 +137,16 @@ function playVideo() {
 
 
 
+  const productImage = document.getElementById("productImage");
+
+  productImage.addEventListener("mouseenter", () => {
+    productImage.style.transition = "transform 0.4s ease-in-out";
+    productImage.style.transform = "scale(1.1)";
+  });
+
+  productImage.addEventListener("mouseleave", () => {
+    productImage.style.transform = "scale(1)";
+  });
+
+
 
