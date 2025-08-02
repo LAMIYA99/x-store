@@ -1622,6 +1622,11 @@ header .swiper-slide .head_text button {
   gap: 10px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 840px) {
+  #our_shop .shop_filters {
+    flex-wrap: wrap;
+  }
+}
 #our_shop .shop_filters .dropdown {
   position: relative;
 }

@@ -32,8 +32,12 @@
     .shop_filters {
         display: flex;
         gap: 10px;
-
         margin-bottom: 50px;
+
+        @media screen and (max-width:840px) {
+            flex-wrap: wrap;
+
+        }
 
         .dropdown {
             position: relative;
@@ -100,13 +104,13 @@
         }
 
         .search_btn {
-        width: 318px;
+            width: 318px;
             height: 45px;
             padding: 12px 20px;
             background-color: #7c8b5c;
             border: none;
             border-radius: 6px;
-         
+
             font-family: "Albert Sans", Sans-serif;
             font-size: 19px;
             font-weight: 400;
@@ -115,7 +119,7 @@
 
             i {
                 margin-right: 6px;
-             width: 19px;
+                width: 19px;
             }
 
             &:hover {
