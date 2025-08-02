@@ -1619,7 +1619,7 @@ header .swiper-slide .head_text button {
 }
 #our_shop .shop_filters {
   display: flex;
-  gap: 10px;
+  gap: 11px;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 840px) {
