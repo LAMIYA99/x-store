@@ -1,0 +1,52 @@
+{
+    "product": [
+      {
+        "id": 1,
+        "name": "Kristal dan yeni fürsət: Biləcəridə 2 otaq studiya mənzil, sadəcə 957 manat aylıq ödənişlə!",
+        "desc": "Sərfəli şərtlərlə yeni mənzil axtaranlar üçün əla xəbərimiz var! Kristal Biləcəri layihəsində yeni 2 otaq studiya mənzillərin satışına start verib!",
+        "img": "https://kristal.az/site/assets/files/1190/lightroom-3-min.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Yasamalda ipotekaya yararlı, yaşayışa hazır mənzil sahibi olun - Kristal!",
+        "desc": "Mənzil axtaran hər kəsin seçim edərkən diqqət yetirdiyi məqamlar fərqlidir. Tikintisi davam edən mənzillər sərfəli seçim axtaranlar üçün, hazır",
+        "img": "https://kristal.az/site/assets/files/1035/hero-cgn_2_-min_1.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Nərimanovda premium təmirli, hazır mənzillərin satışı davam edir - Kristal!",
+        "desc": "Kristal ın City Garden Narimanov layihəsində artıq yaşayışa hazır, premium mənzillərin satışına start verilib.",
+        "img": "https://kristal.az/site/assets/files/1100/py-cover-inside-website_2_-min.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Bulvarda ev almaq istəyənlərə əla təklif: Kristal Towers da hazır mənzillər satışda - Kristal!",
+        "desc": "Bakı bulvarının düz qarşısında yerləşən Kristal Towers layihəsində yaşayışa hazır, geniş mənzillər satışdadır!",
+        "img": "https://kristal.az/site/assets/files/1103/hl-min.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Kristal dan yeni fürsət: Biləcəridə 2 otaq studiya mənzil, sadəcə 957 manat aylıq ödənişlə!",
+        "desc": "Sərfəli şərtlərlə yeni mənzil axtaranlar üçün əla xəbərimiz var! Kristal Biləcəri layihəsində yeni 2 otaq studiya mənzillərin satışına start verib!",
+        "img": "https://kristal.az/site/assets/files/1190/lightroom-3-min.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Yasamalda ipotekaya yararlı, yaşayışa hazır mənzil sahibi olun - Kristal!",
+        "desc": "Mənzil axtaran hər kəsin seçim edərkən diqqət yetirdiyi məqamlar fərqlidir. Tikintisi davam edən mənzillər sərfəli seçim axtaranlar üçün, hazır",
+        "img": "https://kristal.az/site/assets/files/1035/hero-cgn_2_-min_1.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Nərimanovda premium təmirli, hazır mənzillərin satışı davam edir - Kristal!",
+        "desc": "Kristal ın City Garden Narimanov layihəsində artıq yaşayışa hazır, premium mənzillərin satışına start verilib.",
+        "img": "https://kristal.az/site/assets/files/1100/py-cover-inside-website_2_-min.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Bulvarda ev almaq istəyənlərə əla təklif: Kristal Towers da hazır mənzillər satışda - Kristal!",
+        "desc": "Bakı bulvarının düz qarşısında yerləşən Kristal Towers layihəsində yaşayışa hazır, geniş mənzillər satışdadır!",
+        "img": "https://kristal.az/site/assets/files/1103/hl-min.jpg"
+      }
+    ]
+  }
