@@ -4,7 +4,7 @@ import { Facebook, Instagram, Youtube, Linkedin, Twitter } from "lucide-react";
 const Footer = () => {
   return (
     <div>
-      <footer className="relative bg-[#FFFFFF] pt-16 pb-8 mt-24 bg-[url('https://kristal.az/site/templates/assets/img/footer-bg.png')] bg-no-repeat bg-bottom bg-cover">
+      <footer className="relative bg-[#FFFFFF] pt-16 pb-8 mt-24 bg-[url('https://kristal.az/site/templates/assets/img/footer-bg.png')] bg-no-repeat bg-bottom bg-contain">
         <div className="max-w-[1340px] mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-20">
           <div className="col-span-1 md:col-span-1">
             <img

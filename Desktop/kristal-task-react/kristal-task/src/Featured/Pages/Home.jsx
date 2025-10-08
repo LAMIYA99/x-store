@@ -1,9 +1,16 @@
 import React from 'react'
 import HomeTemplates from '../Templates/HomeTemplates'
+import ToTop from '../Common/toTop'
+
 
 const Home = () => {
   return (
-    <div><HomeTemplates/></div>
+    <div>
+
+      <HomeTemplates/>
+      <ToTop/>
+      </div>
+  
   )
 }
 

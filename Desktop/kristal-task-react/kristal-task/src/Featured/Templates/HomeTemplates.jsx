@@ -1,8 +1,13 @@
 import React from 'react'
+import News from '../Section/New'
+import PopularProducts from '../Section/Recently'
 
 const HomeTemplates = () => {
   return (
-    <div></div>
+    <div>
+      <News/>
+      <PopularProducts/>
+    </div>
   )
 }
 

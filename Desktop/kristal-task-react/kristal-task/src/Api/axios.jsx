@@ -1,5 +1,5 @@
 import axios from "axios";
-class AxiosServices {
+class apiServices {
   constructor(baseURL) {
     this.axiosInstance = axios.create({
       baseURL,
@@ -11,9 +11,9 @@ class AxiosServices {
       const res = await this.axiosInstance.get(url);
       return res.data;
     } catch (error) {
-      console.log(message);
+      console.log(error);
     }
   }
 }
 
-export default AxiosServices;
+export default apiServices;
