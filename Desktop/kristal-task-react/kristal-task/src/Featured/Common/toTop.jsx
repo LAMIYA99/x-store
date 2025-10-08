@@ -28,8 +28,8 @@ const ToTop = () => {
         }`}
       >
         <img
-          className="w-[60px] h-[60px]"
-          src="https://icons.veryicon.com/png/o/miscellaneous/monochromatic-surface-icon-library/return-to-the-top-14.png"
+          className="w-[60px] h-[60px] bg-[#F6FAFF]"
+          src="https://cer.iitk.ac.in/olt_img/top.png"
           alt="Scroll to top"
         />
       </button>
